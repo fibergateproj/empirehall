@@ -1,0 +1,95 @@
+.loyalty-block {
+  max-width: 1400px;
+  width: 100%;
+  margin: 0 auto 120px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  @include response(1449px) {
+    padding: 0 15px;
+  }
+  @include response(1023px) {
+    flex-direction: column;
+  }
+  @include response(767px) {
+    margin: 0 auto 80px;
+  }
+  &__content {
+    max-width: 565px;
+    width: 100%;
+    flex-basis: 565px;
+    margin-right: 20px;
+    @include response(1023px) {
+      max-width: 100%;
+      flex-basis: auto;
+      margin: 0 auto 30px;
+    }
+  }
+  &__discounts {
+    max-width: 700px;
+    width: 100%;
+    flex-basis: 700px;
+    padding: 20px;
+    @include response(1023px) {
+      flex-basis: auto;
+      max-width: 100%;
+    }
+    @include response(767px) {
+      padding: 10px;
+    }
+  }
+  &__discounts-inner {
+    background: #fff;
+  }
+  &__item {
+    position: relative;
+    padding: 50px 60px 45px 78px;
+    border-bottom: 1px solid #efefef;
+    &:last-of-type {
+      border: none;
+    }
+    svg {
+      position: absolute;
+      top: 55px;
+      left: 50px;
+    }
+    @include response(767px) {
+      padding: 20px 15px 15px 35px;
+      svg {
+        left: 10px;
+        top: 25px;
+      }
+    }
+  }
+  &__head {
+    @extend %flex-v;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    @include response(767px) {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  }
+  &__title {
+    font-size: 20px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: #000;
+  }
+  &__value {
+    font-size: 14px;
+    line-height: 18px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #8f6d55;
+  }
+  &__text {
+    font-size: 16px;
+    line-height: 26px;
+    color: #525252;
+    @include response(767px) {
+      font-size: 14px;
+      line-height: 22px;
+    }
+  }
+}

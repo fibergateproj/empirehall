@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+{% include 'head.html' %}
+  <body>
+    <div class="wrapper">
+    {% include 'header.html' %}
+
+    <div class="head-block head-block--center">
+      <ol class="breadcrumb" itemscope itemtype="http://schema.org/BreadcrumbList">
+        <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+          <a itemprop="item" href="https://example.com/dresses"><span itemprop="name">Главная</span></a>
+          <meta itemprop="position" content="1" />
+        </li>
+        <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+          <span itemprop="name">Бренды</span>
+          <meta itemprop="position" content="2" />
+        </li>
+      </ol>
+      <div class="head-title">Versace</div>
+    </div>
+
+    <div class="brand-page">
+      <div class="brand-page__main-image">
+        <img src="data/brand-page-img-1.webp" width="1800" height="682" alt="">
+      </div>
+      <div class="brand-page__content">
+        <div class="brand-page__content-image">
+          <img src="data/brands-img-1.webp" width="200" height="110" alt="">
+        </div>
+        <div class="brand-page__content-text text">
+          <p>Дом моды Gianni Versace S.p.A. был основан в 1978 году в Милане и с тех пор прочно занял позицию одного из наиболее респектабельных международных модных брендов, став символом роскоши в истинно итальянском стиле. Versace специализируется на дизайне, производстве и реализации товаров класса «люкс» — от модной одежды haute couture и коллекций готовой одежды до аксессуаров, ювелирных украшений, часов, очков, парфюмерии, а также товаров для дома, на которых гордо красуется наш фирменный логотип — голова Медузы. </p>
+          <p>Группа Versace распространяет свою продукцию через глобальную сеть фирменных магазинов, находящуюся под ее прямым контролем. В данную сеть входит более 200 бутиков в крупных городах и свыше 1500 оптовых дистрибьютеров по всему миру.</p>
+          <p>Донателла Версаче, с 1997 года занимающая пост арт-директора Versace, уверенно ввела бренд в XXI век. На сегодняшний день основной актив Versace — это смелый и бросающий вызов стандартам дизайн, который так нравится мировому кругу ценителей, благодаря чему все больше укрепляется значимость Versace в культуре современности.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="collection-block">
+      <div class="collection-block__title">коллекции Versace</div>
+      <div class="collection-block__nav">
+        <ul class="collection-block__list tabs-list">
+          <li class="collection-block__item tabs-list__item">
+            <a class="tabs-list__link active" href="#collection_1">Все коллекции</a>
+          </li>
+          <li class="collection-block__item tabs-list__item">
+            <a class="tabs-list__link" href="#collection_2">Хрусталь</a>
+          </li>
+          <li class="collection-block__item tabs-list__item">
+            <a class="tabs-list__link" href="#collection_3">Вазы</a>
+          </li>
+          <li class="collection-block__item tabs-list__item">
+            <a class="tabs-list__link" href="#collection_4">столовые приборы</a>
+          </li>
+          <li class="collection-block__item tabs-list__item">
+            <a class="tabs-list__link" href="#collection_5">фарфор</a>
+          </li>
+          <li class="collection-block__item tabs-list__item">
+            <a class="tabs-list__link" href="#collection_6">Все коллекции</a>
+          </li>
+
+          <li class="collection-block__item tabs-list__item">
+            <a class="tabs-list__link" href="#collection_2">Хрусталь</a>
+          </li>
+          <li class="collection-block__item tabs-list__item">
+            <a class="tabs-list__link" href="#collection_3">Вазы</a>
+          </li>
+          <li class="collection-block__item tabs-list__item">
+            <a class="tabs-list__link" href="#collection_4">столовые приборы</a>
+          </li>
+          <li class="collection-block__item tabs-list__item">
+            <a class="tabs-list__link" href="#collection_5">фарфор</a>
+          </li>
+          <li class="collection-block__item tabs-list__item">
+            <a class="tabs-list__link" href="#collection_6">Все коллекции</a>
+          </li>
+          <li class="collection-block__item tabs-list__item">
+            <a class="tabs-list__link" href="#collection_2">Хрусталь</a>
+          </li>
+          <li class="collection-block__item tabs-list__item">
+            <a class="tabs-list__link" href="#collection_3">Вазы</a>
+          </li>
+          <li class="collection-block__item tabs-list__item">
+            <a class="tabs-list__link" href="#collection_4">столовые приборы</a>
+          </li>
+          <li class="collection-block__item tabs-list__item">
+            <a class="tabs-list__link" href="#collection_5">фарфор</a>
+          </li>
+          <li class="collection-block__item tabs-list__item">
+            <a class="tabs-list__link" href="#collection_6">Все коллекции</a>
+          </li>
+        </ul>
+      </div>
+      <div class="tabs-content">
+        <div id="collection_1" class="tab">
+          <div class="collection__list">
+            <a href="#" class="main-catalog__item">
+              <div class="main-catalog__image">
+                <img data-src="data/main-catalog-img-1.webp" width="430" height="524" alt="" class="lazyload">
+              </div>
+              <div class="main-catalog__title">LA SCALA DEL PALAZZO</div>
+            </a>
+            <a href="#" class="main-catalog__item">
+              <div class="main-catalog__image">
+                <img data-src="data/main-catalog-img-2.webp" width="430" height="524" alt="" class="lazyload">
+              </div>
+              <div class="main-catalog__title">LA SCALA DEL PALAZZO</div>
+            </a>
+            <a href="#" class="main-catalog__item">
+              <div class="main-catalog__image">
+                <img data-src="data/main-catalog-img-3.webp" width="430" height="524" alt="" class="lazyload">
+              </div>
+              <div class="main-catalog__title">LA SCALA DEL PALAZZO</div>
+            </a>
+            <a href="#" class="main-catalog__item">
+              <div class="main-catalog__image">
+                <img data-src="data/main-catalog-img-1.webp" width="430" height="524" alt="" class="lazyload">
+              </div>
+              <div class="main-catalog__title">LA SCALA DEL PALAZZO</div>
+            </a>
+            <a href="#" class="main-catalog__item">
+              <div class="main-catalog__image">
+                <img data-src="data/main-catalog-img-2.webp" width="430" height="524" alt="" class="lazyload">
+              </div>
+              <div class="main-catalog__title">LA SCALA DEL PALAZZO</div>
+            </a>
+            <a href="#" class="main-catalog__item">
+              <div class="main-catalog__image">
+                <img data-src="data/main-catalog-img-3.webp" width="430" height="524" alt="" class="lazyload">
+              </div>
+              <div class="main-catalog__title">LA SCALA DEL PALAZZO</div>
+            </a>
+            <a href="#" class="main-catalog__item">
+              <div class="main-catalog__image">
+                <img data-src="data/main-catalog-img-1.webp" width="430" height="524" alt="" class="lazyload">
+              </div>
+              <div class="main-catalog__title">LA SCALA DEL PALAZZO</div>
+            </a>
+            <a href="#" class="main-catalog__item">
+              <div class="main-catalog__image">
+                <img data-src="data/main-catalog-img-2.webp" width="430" height="524" alt="" class="lazyload">
+              </div>
+              <div class="main-catalog__title">LA SCALA DEL PALAZZO</div>
+            </a>
+          </div>
+        </div>
+        <div id="collection_2" class="tab">
+          <div class="collection__list">
+            <a href="#" class="main-catalog__item">
+              <div class="main-catalog__image">
+                <img data-src="data/main-catalog-img-1.webp" width="430" height="524" alt="" class="lazyload">
+              </div>
+              <div class="main-catalog__title">LA SCALA DEL PALAZZO</div>
+            </a>
+            <a href="#" class="main-catalog__item">
+              <div class="main-catalog__image">
+                <img data-src="data/main-catalog-img-2.webp" width="430" height="524" alt="" class="lazyload">
+              </div>
+              <div class="main-catalog__title">LA SCALA DEL PALAZZO</div>
+            </a>
+          </div>
+        </div>
+        <div id="collection_3" class="tab">
+          <div class="collection__list">
+            <a href="#" class="main-catalog__item">
+              <div class="main-catalog__image">
+                <img data-src="data/main-catalog-img-1.webp" width="430" height="524" alt="" class="lazyload">
+              </div>
+              <div class="main-catalog__title">LA SCALA DEL PALAZZO</div>
+            </a>
+            <a href="#" class="main-catalog__item">
+              <div class="main-catalog__image">
+                <img data-src="data/main-catalog-img-2.webp" width="430" height="524" alt="" class="lazyload">
+              </div>
+              <div class="main-catalog__title">LA SCALA DEL PALAZZO</div>
+            </a>
+            <a href="#" class="main-catalog__item">
+              <div class="main-catalog__image">
+                <img data-src="data/main-catalog-img-3.webp" width="430" height="524" alt="" class="lazyload">
+              </div>
+              <div class="main-catalog__title">LA SCALA DEL PALAZZO</div>
+            </a>
+            <a href="#" class="main-catalog__item">
+              <div class="main-catalog__image">
+                <img data-src="data/main-catalog-img-1.webp" width="430" height="524" alt="" class="lazyload">
+              </div>
+              <div class="main-catalog__title">LA SCALA DEL PALAZZO</div>
+            </a>
+            <a href="#" class="main-catalog__item">
+              <div class="main-catalog__image">
+                <img data-src="data/main-catalog-img-2.webp" width="430" height="524" alt="" class="lazyload">
+              </div>
+              <div class="main-catalog__title">LA SCALA DEL PALAZZO</div>
+            </a>
+            <a href="#" class="main-catalog__item">
+              <div class="main-catalog__image">
+                <img data-src="data/main-catalog-img-3.webp" width="430" height="524" alt="" class="lazyload">
+              </div>
+              <div class="main-catalog__title">LA SCALA DEL PALAZZO</div>
+            </a>
+          </div>
+        </div>
+        <div id="collection_4" class="tab">
+          <div class="collection__list">
+            <a href="#" class="main-catalog__item">
+              <div class="main-catalog__image">
+                <img data-src="data/main-catalog-img-1.webp" width="430" height="524" alt="" class="lazyload">
+              </div>
+              <div class="main-catalog__title">LA SCALA DEL PALAZZO</div>
+            </a>
+            <a href="#" class="main-catalog__item">
+              <div class="main-catalog__image">
+                <img data-src="data/main-catalog-img-2.webp" width="430" height="524" alt="" class="lazyload">
+              </div>
+              <div class="main-catalog__title">LA SCALA DEL PALAZZO</div>
+            </a>
+            <a href="#" class="main-catalog__item">
+              <div class="main-catalog__image">
+                <img data-src="data/main-catalog-img-3.webp" width="430" height="524" alt="" class="lazyload">
+              </div>
+              <div class="main-catalog__title">LA SCALA DEL PALAZZO</div>
+            </a>
+          </div>
+        </div>
+        <div id="collection_5" class="tab">
+          <div class="collection__list">
+            <a href="#" class="main-catalog__item">
+              <div class="main-catalog__image">
+                <img data-src="data/main-catalog-img-1.webp" width="430" height="524" alt="" class="lazyload">
+              </div>
+              <div class="main-catalog__title">LA SCALA DEL PALAZZO</div>
+            </a>
+            <a href="#" class="main-catalog__item">
+              <div class="main-catalog__image">
+                <img data-src="data/main-catalog-img-2.webp" width="430" height="524" alt="" class="lazyload">
+              </div>
+              <div class="main-catalog__title">LA SCALA DEL PALAZZO</div>
+            </a>
+          </div>
+        </div>
+        <div id="collection_6" class="tab">
+          <div class="collection__list">
+            <a href="#" class="main-catalog__item">
+              <div class="main-catalog__image">
+                <img data-src="data/main-catalog-img-1.webp" width="430" height="524" alt="" class="lazyload">
+              </div>
+              <div class="main-catalog__title">LA SCALA DEL PALAZZO</div>
+            </a>
+            <a href="#" class="main-catalog__item">
+              <div class="main-catalog__image">
+                <img data-src="data/main-catalog-img-2.webp" width="430" height="524" alt="" class="lazyload">
+              </div>
+              <div class="main-catalog__title">LA SCALA DEL PALAZZO</div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="collection-products">
+      <div class="collection-products__title">товары versace</div>
+      <div class="collection-products__list">
+        <div class="product__item">
+          <div class="product__title">
+            <a href="#">Bernardaud</a>
+          </div>
+          <div class="product__image">
+            <a href="#">
+              <img data-src="data/product-img-1.webp" width="370" height="370" alt="" class="lazyload">
+            </a>
+          </div>
+          <div class="product__box">
+            <div class="product__price">
+              <div class="product__no-price-text">Нет цены</div>
+              <div class="product__no-price-btm popup-open" data-for="popup-callback">Запросить цену</div>
+            </div>
+            <a class="product__link" href="#">
+              <svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="images/sprite.svg#link-arrow"></use></svg>
+            </a>
+          </div>
+        </div>
+        <div class="product__item">
+          <div class="product__title">
+            <a href="#">"Laque de Chine" Dinner Plate</a>
+          </div>
+          <div class="product__image">
+            <a href="#">
+              <img data-src="data/product-img-1.webp" width="370" height="370" alt="" class="lazyload">
+            </a>
+          </div>
+          <div class="product__box">
+            <div class="product__price">
+              <div class="product__price-old">24,804 uah</div>
+              <div class="product__price-new">24,804 uah</div>
+            </div>
+            <a class="product__link" href="#">
+              <svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="images/sprite.svg#link-arrow"></use></svg>
+            </a>
+          </div>
+        </div>
+        <div class="product__item">
+          <div class="product__title">
+            <a href="#">Bernardaud</a>
+          </div>
+          <div class="product__image">
+            <a href="#">
+              <img data-src="data/product-img-1.webp" width="370" height="370" alt="" class="lazyload">
+            </a>
+          </div>
+          <div class="product__box">
+            <div class="product__price">
+              <div class="product__price-old">24,804 uah</div>
+              <div class="product__price-new">24,804 uah</div>
+            </div>
+            <a class="product__link" href="#">
+              <svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="images/sprite.svg#link-arrow"></use></svg>
+            </a>
+          </div>
+        </div>
+        <div class="product__item">
+          <div class="product__title">
+            <a href="#">"Laque de Chine" Dinner Plate</a>
+          </div>
+          <div class="product__image">
+            <a href="#">
+              <img data-src="data/product-img-1.webp" width="370" height="370" alt="" class="lazyload">
+            </a>
+          </div>
+          <div class="product__box">
+            <div class="product__price">
+              <div class="product__price-old">24,804 uah</div>
+              <div class="product__price-new">24,804 uah</div>
+            </div>
+            <a class="product__link" href="#">
+              <svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="images/sprite.svg#link-arrow"></use></svg>
+            </a>
+          </div>
+        </div>
+        <div class="product__item">
+          <div class="product__title">
+            <a href="#">Bernardaud</a>
+          </div>
+          <div class="product__image">
+            <a href="#">
+              <img data-src="data/product-img-1.webp" width="370" height="370" alt="" class="lazyload">
+            </a>
+          </div>
+          <div class="product__box">
+            <div class="product__price">
+              <div class="product__price-old">24,804 uah</div>
+              <div class="product__price-new">24,804 uah</div>
+            </div>
+            <a class="product__link" href="#">
+              <svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="images/sprite.svg#link-arrow"></use></svg>
+            </a>
+          </div>
+        </div>
+        <div class="product__item">
+          <div class="product__title">
+            <a href="#">Bernardaud</a>
+          </div>
+          <div class="product__image">
+            <a href="#">
+              <img data-src="data/product-img-1.webp" width="370" height="370" alt="" class="lazyload">
+            </a>
+          </div>
+          <div class="product__box">
+            <div class="product__price">
+              <div class="product__price-old">24,804 uah</div>
+              <div class="product__price-new">24,804 uah</div>
+            </div>
+            <a class="product__link" href="#">
+              <svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="images/sprite.svg#link-arrow"></use></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+      <a href="#" class="show-all">Смотреть все комбинации</a>
+    </div>
+
+    {% include 'footer.html' %}
+  </div>
+  {% include 'js.html' %}
+</body>
+</html>

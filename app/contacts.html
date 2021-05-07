@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+{% include 'head.html' %}
+  <body>
+    <div class="wrapper">
+    {% include 'header.html' %}
+
+    <div class="contacts-block">
+
+      <div class="contacts-info">
+        <div class="contacts-info__main-title">Контакты</div>
+        <div class="contacts-info__box">
+          <div class="contacts-info__list">
+            <div class="contacts-info__item">
+              <div class="contacts-info__icon">
+                <img class="icon-baloon"  src="/images/baloon.svg" alt="">
+              </div>
+              <div class="contacts-info__content">
+                <div class="contacts-info__title">Адрес:</div>
+                <div class="contacts-info__value">Киев, ТРЦ Lavina Mall, ул. Берковецкая 6 </div>
+              </div>
+            </div>
+            <div class="contacts-info__item">
+              <div class="contacts-info__icon">
+                <img class="icon-phone-gradient"  src="/images/phone-gradient.svg" alt="">
+              </div>
+              <div class="contacts-info__content">
+                <div class="contacts-info__title">Телефон:</div>
+                <div class="contacts-info__value">
+                  <a href="tel:+380936719152">+38 (093) 671 - 91 - 52</a>
+                </div>
+              </div>
+            </div>
+            <div class="contacts-info__item">
+              <div class="contacts-info__icon">
+                <img class="icon-timer"  src="/images/timer.svg" alt="">
+              </div>
+              <div class="contacts-info__content">
+                <div class="contacts-info__title">График работы:</div>
+                <div class="contacts-info__value">
+                  <span>пн-пт: с</span> 8:30 <span>до</span> 17:00
+                </div>
+              </div>
+            </div>
+            <div class="contacts-info__item">
+              <div class="contacts-info__icon">
+                <img class="icon-email-gradient"  src="/images/email-gradient.svg" alt="">
+              </div>
+              <div class="contacts-info__content">
+                <div class="contacts-info__title">Email:</div>
+                <div class="contacts-info__value">
+                  <a href="mailto:Empire_Hall@gmail.com">Empire_Hall@gmail.com</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <a class="main-button" href="#">Связаться с нами</a>
+
+        </div>
+      </div>
+
+
+      <div id="map" class="map"></div>
+    </div>
+
+    {% include 'footer.html' %}
+  </div>
+
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCAxpBYVKumoeOD9Z7PORFRHwnjBxSZLZw"></script>
+  <script>
+    var markersData = [
+      {
+        lat: 50.4953846,
+        lng: 30.3577117,
+      }
+    ]
+    var MarkerImageSrc = 'images/marker.png';
+  </script>
+  {% include 'js.html' %}
+</body>
+</html>

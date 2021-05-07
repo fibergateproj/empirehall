@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en">
+{% include 'head.html' %}
+  <body>
+    <div class="wrapper">
+    {% include 'header.html' %}
+
+    <div class="head-block">
+      <ol class="breadcrumb" itemscope itemtype="http://schema.org/BreadcrumbList">
+        <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+          <a itemprop="item" href="https://example.com/dresses"><span itemprop="name">Главная</span></a>
+          <meta itemprop="position" content="1" />
+        </li>
+        <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+          <span itemprop="name">Фарфор</span>
+          <meta itemprop="position" content="2" />
+        </li>
+      </ol>
+      <div class="head-title">Фарфор</div>
+    </div>
+
+    <div class="catalog">
+      <div class="catalog__sidebar-button main-button">Фильтры</div>
+      <div class="catalog__sidebar">
+        
+        <div class="filter-categories__list accordion">
+          <div class="filter-categories__item">
+            <div class="filter-categories__title"><a class="link" href="#">Фарфор</a> <span class="arrow opener"></span></div>
+            <div class="filter-categories__content slide">
+              <div class="filter-categories__subitem">
+                <div class="filter-categories__subitem-title"><div class="opener"></div><a href="#">Сервизы</a></div>
+                <div class="filter-categories__content slide">
+                  <ul>
+                    <li><a href="#">Столово-чайные наборы</a></li>
+                    <li><a href="#">Контейнера для хранения</a></li>
+                    <li><a href="#">Тарелки хлебно-пирожковые</a></li>
+                    <li><a href="#">Сервировка</a></li>
+                    <li><a href="#">Декоративный фарфор</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="filter-categories__subitem">
+                <div class="filter-categories__subitem-title"><div class="opener"></div><a href="#">Аксессуары</a></div>
+                <div class="filter-categories__content slide">
+                  <ul>
+                    <li><a href="#">Столово-чайные наборы</a></li>
+                    <li><a href="#">Контейнера для хранения</a></li>
+                    <li><a href="#">Тарелки хлебно-пирожковые</a></li>
+                    <li><a href="#">Сервировка</a></li>
+                    <li><a href="#">Декоративный фарфор</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="active-filters">
+          <div class="active-filters__title">Активные фильтры</div>
+          <div class="active-filters__list"> 
+            <button class="btn btn-xs btn-danger">
+              Фарфор 
+              <svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="images/sprite.svg#close"></use></svg>
+            </button>
+            <button class="btn btn-xs btn-danger">
+              Robert Haviilend 
+              <svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="images/sprite.svg#close"></use></svg>
+            </button>
+            <button class="btn btn-xs btn-danger">
+              Стекло 
+              <svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="images/sprite.svg#close"></use></svg>
+            </button>
+            <button class="btn btn-xs btn-danger">
+              Белый 
+              <svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="images/sprite.svg#close"></use></svg>
+            </button>
+            <button class="btn btn-xs btn-danger">
+              6 шт 
+              <svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="images/sprite.svg#close"></use></svg>
+            </button>
+          </div>
+          <button type="button" class="clear-filters">Сбросить все</button>
+        </div>
+
+        <div class="list-group-item ocfilter-option group--uppercase">
+          <div class="option-name">Бренды:</div>
+          <div class="option-values__wrap">
+            <div class="option-values">
+              <label>
+                <input type="checkbox" name="brands">
+                <a href="">Aram</a>
+              </label>
+              <label>
+                <input type="checkbox" name="brands">
+                <a href="">Baccarat</a>
+              </label>
+              <label class="selected">
+                <input type="checkbox" name="brands">
+                <a href="">Doum</a>
+              </label>
+              <label>
+                <input type="checkbox" name="brands">
+                <a href="">Robert Haviilend</a>
+              </label>
+              <label>
+                <input type="checkbox" name="brands">
+                <a href="">Felix</a>
+              </label>
+              <label>
+                <input type="checkbox" name="brands">
+                <a href="">Raynaud</a>
+              </label>
+
+
+              <label>
+                <input type="checkbox" name="brands">
+                <a href="">Felix</a>
+              </label>
+              <label>
+                <input type="checkbox" name="brands">
+                <a href="">Raynaud</a>
+              </label>
+            </div>
+            
+          </div>
+        </div>
+        <div class="list-group-item ocfilter-option">
+          <div class="option-name">Материал:</div>
+          <div class="option-values__wrap">
+            <div class="option-values">
+              <label>
+                <input type="checkbox" name="material">
+                <a href="">Хрусталь</a>
+              </label>
+              <label>
+                <input type="checkbox" name="material">
+                <a href="">Стекло</a>
+              </label>
+              <label class="selected">
+                <input type="checkbox" name="material">
+                <a href="">Вазы</a>
+              </label>
+            </div>
+            
+          </div>
+        </div>
+        <div class="list-group-item ocfilter-option">
+          <div class="option-name">Упаковка:</div>
+          <div class="option-values__wrap">
+            <div class="option-values">
+              <label>
+                <input type="checkbox" name="packaging">
+                <a href="">1 шт</a>
+              </label>
+              <label>
+                <input type="checkbox" name="packaging">
+                <a href="">6 шт</a>
+              </label>
+            </div>
+            
+          </div>
+        </div>
+        <div class="list-group-item ocfilter-option">
+          <div class="option-name">Цвет:</div>
+          <div class="option-values__wrap">
+            <div class="option-values">
+              <label>
+                <input type="checkbox" name="color">
+                <a href="">Черный</a>
+              </label>
+              <label>
+                <input type="checkbox" name="color">
+                <a href="">Белый</a>
+              </label>
+              <label>
+                <input type="checkbox" name="color">
+                <a href="">Серый</a>
+              </label>
+            </div>
+            
+          </div>
+        </div>
+
+      </div>
+      <div class="catalog__main">
+        <div class="catalog__top">
+          <div class="catalogue-filters">
+            <select class="sorting-select" name="sorting">
+              <option value="">По популярности</option>
+              <option value="">По цене по убыванию</option>
+              <option value="">По цене по возрастанию</option>
+              <option value="">По названию А-Я</option>
+              <option value="">По названию Я-А</option>
+            </select>
+            <div class="catalog__top-info">Показать: 
+              <select id="input-limit" class="sorting-select form-control" onchange="location = this.value;">
+                <option value="https://empirehall.test-lemon.com/magazin/?limit=30" selected="selected">30</option>
+                <option value="https://empirehall.test-lemon.com/magazin/?limit=60">60</option>
+                <option value="https://empirehall.test-lemon.com/magazin/?limit=90">90</option>
+              </select>
+            </div>
+          </div>
+          <div class="catalog__top-info">Найдено: <span>33 товара</span></div>
+        </div>
+        <div class="catalog__list">
+          <div class="product__item">
+            <div class="product__title">
+              <a href="#">Щипцы для сервировки, нержавеющая сталь, цвет: медный, LIVING, Sambonet</a>
+              <ol class="breadcrumb brand-breadcrumb">
+                <li>
+                  <a href="https://example.com/dresses"><span>Baccarat</span></a>
+                </li>
+                <li>
+                  <a href="https://example.com/dresses"><span>La scala del palazzo</span></a>
+                </li>
+              </ol>
+            </div>
+            <div class="product__image">
+              <a href="#">
+                <img data-src="data/product-img-1.webp" width="370" height="370" alt="" class="lazyload">
+              </a>
+            </div>
+            <div class="product__box">
+              <div class="product__price">
+                <div class="product__no-price-text">Нет цены</div>
+                <div class="product__no-price-btm popup-open" data-for="popup-callback">Запросить цену</div>
+              </div>
+              <span class="product-nav ">
+                <a class="product__link link-favorite active" href="#">
+                  <svg>
+                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="images/sprite.svg#wishlist"></use>
+                  </svg>
+                </a>
+                <a class="product__link" href="#">
+                  <svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="images/sprite.svg#link-arrow"></use></svg>
+                </a>
+              </span>
+              
+            </div>
+          </div>
+          <div class="product__item">
+            <div class="product__title">
+              <a href="#">Щипцы для сервировки, нержавеющая сталь, цвет: медный, LIVING, Sambonet</a>
+              <ol class="breadcrumb brand-breadcrumb">
+                <li>
+                  <a href="https://example.com/dresses"><span>Baccarat</span></a>
+                </li>
+                <li>
+                  <a href="https://example.com/dresses"><span>La scala del palazzo</span></a>
+                </li>
+              </ol>
+            </div>
+            <div class="product__image">
+              <a href="#">
+                <img src="/images/no-image-450x320.jpg" width="370" height="370" alt="">
+              </a>
+            </div>
+            <div class="product__box">
+              <div class="product__price">
+                <div class="product__price-old">24,804 uah</div>
+                <div class="product__price-new">24,804 uah</div>
+              </div>
+              <a class="product__link" href="#">
+                <svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="images/sprite.svg#link-arrow"></use></svg>
+              </a>
+            </div>
+          </div>
+          <div class="product__item">
+            <div class="product__title">
+              <a href="#">Bernardaud</a>
+            </div>
+            <div class="product__image">
+              <a href="#">
+                <img data-src="data/product-img-1.webp" width="370" height="370" alt="" class="lazyload">
+              </a>
+            </div>
+            <div class="product__box">
+              <div class="product__price">
+                <div class="product__price-old">24,804 uah</div>
+                <div class="product__price-new">24,804 uah</div>
+              </div>
+              <a class="product__link" href="#">
+                <svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="images/sprite.svg#link-arrow"></use></svg>
+              </a>
+            </div>
+          </div>
+          <div class="product__item">
+            <div class="product__title">
+              <a href="#">Bernardaud</a>
+            </div>
+            <div class="product__image">
+              <a href="#">
+                <img data-src="data/product-img-1.webp" width="370" height="370" alt="" class="lazyload">
+              </a>
+            </div>
+            <div class="product__box">
+              <div class="product__price">
+                <div class="product__price-old">24,804 uah</div>
+                <div class="product__price-new">24,804 uah</div>
+              </div>
+              <a class="product__link" href="#">
+                <svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="images/sprite.svg#link-arrow"></use></svg>
+              </a>
+            </div>
+          </div>
+          <div class="product__item">
+            <div class="product__title">
+              <a href="#">Bernardaud</a>
+            </div>
+            <div class="product__image">
+              <a href="#">
+                <img data-src="data/product-img-1.webp" width="370" height="370" alt="" class="lazyload">
+              </a>
+            </div>
+            <div class="product__box">
+              <div class="product__price">
+                <div class="product__price-old">24,804 uah</div>
+                <div class="product__price-new">24,804 uah</div>
+              </div>
+              <a class="product__link" href="#">
+                <svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="images/sprite.svg#link-arrow"></use></svg>
+              </a>
+            </div>
+          </div>
+          <div class="product__item">
+            <div class="product__title">
+              <a href="#">Bernardaud</a>
+            </div>
+            <div class="product__image">
+              <a href="#">
+                <img data-src="data/product-img-1.webp" width="370" height="370" alt="" class="lazyload">
+              </a>
+            </div>
+            <div class="product__box">
+              <div class="product__price">
+                <div class="product__price-old">24,804 uah</div>
+                <div class="product__price-new">24,804 uah</div>
+              </div>
+              <a class="product__link" href="#">
+                <svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="images/sprite.svg#link-arrow"></use></svg>
+              </a>
+            </div>
+          </div>
+          <div class="product__item">
+            <div class="product__title">
+              <a href="#">Bernardaud</a>
+            </div>
+            <div class="product__image">
+              <a href="#">
+                <img data-src="data/product-img-1.webp" width="370" height="370" alt="" class="lazyload">
+              </a>
+            </div>
+            <div class="product__box">
+              <div class="product__price">
+                <div class="product__price-old">24,804 uah</div>
+                <div class="product__price-new">24,804 uah</div>
+              </div>
+              <a class="product__link" href="#">
+                <svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="images/sprite.svg#link-arrow"></use></svg>
+              </a>
+            </div>
+          </div>
+          <div class="product__item">
+            <div class="product__title">
+              <a href="#">Bernardaud</a>
+            </div>
+            <div class="product__image">
+              <a href="#">
+                <img data-src="data/product-img-1.webp" width="370" height="370" alt="" class="lazyload">
+              </a>
+            </div>
+            <div class="product__box">
+              <div class="product__price">
+                <div class="product__price-old">24,804 uah</div>
+                <div class="product__price-new">24,804 uah</div>
+              </div>
+              <a class="product__link" href="#">
+                <svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="images/sprite.svg#link-arrow"></use></svg>
+              </a>
+            </div>
+          </div>
+          <div class="product__item">
+            <div class="product__title">
+              <a href="#">Bernardaud</a>
+            </div>
+            <div class="product__image">
+              <a href="#">
+                <img data-src="data/product-img-1.webp" width="370" height="370" alt="" class="lazyload">
+              </a>
+            </div>
+            <div class="product__box">
+              <div class="product__price">
+                <div class="product__price-old">24,804 uah</div>
+                <div class="product__price-new">24,804 uah</div>
+              </div>
+              <a class="product__link" href="#">
+                <svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="images/sprite.svg#link-arrow"></use></svg>
+              </a>
+            </div>
+          </div>
+          <div class="product__item">
+            <div class="product__title">
+              <a href="#">Bernardaud</a>
+            </div>
+            <div class="product__image">
+              <a href="#">
+                <img data-src="data/product-img-1.webp" width="370" height="370" alt="" class="lazyload">
+              </a>
+            </div>
+            <div class="product__box">
+              <div class="product__price">
+                <div class="product__price-old">24,804 uah</div>
+                <div class="product__price-new">24,804 uah</div>
+              </div>
+              <a class="product__link" href="#">
+                <svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="images/sprite.svg#link-arrow"></use></svg>
+              </a>
+            </div>
+          </div>
+          <div class="product__item">
+            <div class="product__title">
+              <a href="#">Bernardaud</a>
+            </div>
+            <div class="product__image">
+              <a href="#">
+                <img data-src="data/product-img-1.webp" width="370" height="370" alt="" class="lazyload">
+              </a>
+            </div>
+            <div class="product__box">
+              <div class="product__price">
+                <div class="product__price-old">24,804 uah</div>
+                <div class="product__price-new">24,804 uah</div>
+              </div>
+              <a class="product__link" href="#">
+                <svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="images/sprite.svg#link-arrow"></use></svg>
+              </a>
+            </div>
+          </div>
+          <div class="product__item">
+            <div class="product__title">
+              <a href="#">Bernardaud</a>
+            </div>
+            <div class="product__image">
+              <a href="#">
+                <img data-src="data/product-img-1.webp" width="370" height="370" alt="" class="lazyload">
+              </a>
+            </div>
+            <div class="product__box">
+              <div class="product__price">
+                <div class="product__price-old">24,804 uah</div>
+                <div class="product__price-new">24,804 uah</div>
+              </div>
+              <a class="product__link" href="#">
+                <svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="images/sprite.svg#link-arrow"></use></svg>
+              </a>
+            </div>
+          </div>
+        </div>
+        {% include 'pagination.html' %}
+        <div class="contacts-block">
+          <div class="contacts-block__title">Фарфор</div>
+          <div class="contacts-block__text text scroll-text">
+            <p>Пятьдесят лет спустя Зеев все еще взволнован своей витриной. На этот раз, однако, это в гораздо большем масштабе. Магазин ARAM, расположенный в самом сердце Ковент-Гарден, в настоящее время является главным местом назначения мебели и дизайна изделий в столице. «Я хочу предоставить как можно более широкий ассортимент людям, желающим получить высококачественный дизайн и производство, а также отличный сервис». Теперь, когда британцы, наконец, приняли современный дизайн, Зеев намеревается дать им его во всех размерах, формах и цветах, от его любимой лампы Castiglioni Toio до совершенно нового прототипа от неизвестного дизайнера, только что из Пятьдесят лет спустя Зеев все еще взволнован своей витриной. На этот раз, однако, это в гораздо большем масштабе. Магазин ARAM,
+                Пятьдесят лет спустя Зеев все еще взволнован своей витриной. На этот раз, однако, это в гораздо большем масштабе. Магазин ARAM, расположенный в самом сердце Ковент-Гарден, в настоящее время является главным местом назначения мебели и дизайна изделий в </p>
+            <p>Пятьдесят лет спустя Зеев все еще взволнован своей витриной. На этот раз, однако, это в гораздо большем масштабе. Магазин ARAM, расположенный в самом сердце Ковент-Гарден, в настоящее время является главным местом назначения мебели и дизайна изделий в столице. «Я хочу предоставить как можно более широкий ассортимент людям, желающим получить высококачественный дизайн и производство, а также отличный сервис». Теперь, когда британцы, наконец, приняли современный дизайн, Зеев намеревается дать им его во всех размерах, формах и цветах, от его любимой лампы Castiglioni Toio до совершенно нового прототипа от неизвестного дизайнера, только что из Пятьдесят лет спустя Зеев все еще взволнован своей витриной. На этот раз, однако, это в гораздо большем масштабе. Магазин ARAM,
+                Пятьдесят лет спустя Зеев все еще взволнован своей витриной. На этот раз, однако, это в гораздо большем масштабе. Магазин ARAM, расположенный в самом сердце Ковент-Гарден, в настоящее время является главным местом назначения мебели и дизайна изделий в </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    {% include 'footer.html' %}
+  </div>
+  {% include 'js.html' %}
+</body>
+</html>

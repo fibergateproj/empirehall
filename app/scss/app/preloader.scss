@@ -1,0 +1,28 @@
+.preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 998;
+  background: #fff;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  overflow: visible;
+  opacity: 1;
+  visibility: visible;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  &.hide {
+    overflow: hidden;
+    visibility: hidden;
+    opacity: 0;
+    transition: .3s ease-out;
+  }
+  svg,img {
+    width: auto;
+    max-width: 200px;
+    height: 400px;
+    max-height: 100%;
+  }
+}

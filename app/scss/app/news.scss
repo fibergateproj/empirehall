@@ -1,0 +1,230 @@
+.news {
+  max-width: 1400px;
+  width: 100%;
+  margin: 0 auto 150px;
+  @include response(1449px) {
+    padding: 0 15px;
+  }
+  @include response(767px) {
+    margin: 0 auto 80px;
+  }
+  &__list {
+    margin: 0 -20px 30px;
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    flex-wrap: wrap;
+    @include response(1249px) {
+      justify-content: center;
+    }
+  }
+  &__item {
+    background: #fafafa;
+    max-width: 450px;
+    width: 100%;
+    flex-basis: 450px;
+    margin: 0 15px 30px;
+    @include response(1449px) {
+      max-width: 30.9%;
+      flex-basis: 30.9%;
+    }
+    @include response(1249px) {
+      max-width: 450px;
+      flex-basis: 450px;
+    }
+    @include response(1023px) {
+      max-width: 46%;
+      flex-basis: 46%;
+    }
+    @include response(767px) {
+      max-width: 450px;
+      flex-basis: 450px;
+    }
+  }
+  &__info {
+    padding: 40px 30px 30px;
+  }
+  &__image {
+    overflow: hidden;
+    img {
+      transition: .3s ease-in-out;
+    }
+    @include hover() {
+      img {
+        transform: scale(1.05);
+      }
+    }
+  }
+  &__title {
+    line-height: 27px;
+    font-size: 20px;
+    text-align: center;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+    @include response(1449px) {
+      font-size: 18px;
+      line-height: 24px;
+    }
+    @include response(1023px) {
+      font-size: 16px;
+      line-height: 21px;
+    }
+    a {
+      text-decoration: none;
+      color: #000;
+      transition: .3s ease-in-out;
+      @include hover() {
+        color: $main;
+        text-decoration: underline;
+      }
+    }
+  }
+  &__date {
+    text-align: center;
+    line-height: 15px;
+    font-size: 12px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #878787;
+  }
+}
+
+.article {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto 180px;
+  @include response(767px) {
+    margin: 0 auto 65px;
+  }
+  @include response(1249px) {
+    padding: 0 15px;
+  }
+  &__slider {
+    margin-bottom: 85px;
+    &.slick-dotted.slick-slider {
+      margin-bottom: 85px;
+    }
+    .slick-dots {
+      bottom: -45px;
+      li {
+        width: 6px;
+        height: 6px;
+        margin: 0 15px;
+        transform: rotate(45deg);
+        background: rgba(82, 82, 82, 0.3);
+        transition: .3s ease-in-out;
+        button {
+          &::before {
+            display: none;
+          }
+        }
+        &.slick-active {
+          background: $gold;
+        }
+      }
+    }
+  }
+  &__date {
+    font-size: 14px;
+    line-height: 18px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    max-width: 1060px;
+    width: 100%;
+    margin: 0 auto 30px;
+    color: #878787;
+  }
+  &__content {
+    max-width: 1060px;
+    width: 100%;
+    margin: 0 auto;
+    iframe {
+      border: none;
+      width: 100%;
+      height: 540px;
+      @include response(479px) {
+        height: 180px;
+      }
+    }
+  }
+  &__arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 2;
+    cursor: pointer;
+    svg {
+      fill: #c8c8c8;
+      transition: .3s ease-in-out;
+      @include response(1449px) {
+        fill: #000;
+      }
+    }
+    &.prev-arrow {
+      left: -100px;
+      @include response(1449px) {
+        left: 50px;
+      }
+    }
+    &.next-arrow {
+      right: -100px;
+      @include response(1449px) {
+        right: 50px;
+      }
+    }
+    @include hover() {
+      svg {
+        fill: #000;
+      }
+    }
+  }
+}
+
+.similar-news {
+  max-width: 1400px;
+  width: 100%;
+  margin: 0 auto 120px;
+  @include response(1449px) {
+    padding: 0 15px;
+  }
+  @include response(767px) {
+    margin: 0 auto 55px;
+  }
+  &__top {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 40px;
+    @include response(767px) {
+      flex-direction: column;
+      align-items: center;
+    }
+    .show-all {
+      margin: 0;
+    }
+  }
+  &__title {
+    line-height: 40px;
+    font-size: 32px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: #000000;
+    @include response(767px) {
+      text-align: center;
+      font-size: 26px;
+      margin-bottom: 15px;
+    }
+  }
+  &__list {
+    margin: 0 -20px;
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    flex-wrap: wrap;
+    @include response(1249px) {
+      justify-content: center;
+    }
+  }
+}

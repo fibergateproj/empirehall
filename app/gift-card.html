@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+{% include 'head.html' %}
+  <body>
+    <div class="wrapper">
+    {% include 'header.html' %}
+
+    <div class="top-section" style="background-image: url('data/gift-card-page-section-img-1.webp')">
+      <div class="head-block head-block--center">
+        <ol class="breadcrumb" itemscope itemtype="http://schema.org/BreadcrumbList">
+          <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+            <a itemprop="item" href="https://example.com/dresses"><span itemprop="name">Главная</span></a>
+            <meta itemprop="position" content="1" />
+          </li>
+          <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+            <span itemprop="name">Подарочная карта</span>
+            <meta itemprop="position" content="2" />
+          </li>
+        </ol>
+      </div>
+      <div class="top-section__box">
+        <div class="top-section__title">Подарочная карта</div>
+      </div>
+    </div>
+
+    <div class="gift-card">
+      <div class="gift-card__inner">
+
+        <ul class="gift-card__tabs">
+          <li class="gift-card__tabs-item">
+            <a href="#" class="active">Мужская карта</a>
+          </li>
+          <li class="gift-card__tabs-item">
+            <a href="#">Женская карта</a>
+          </li>
+          <li class="gift-card__tabs-item">
+            <a href="#">Свадебный сертификат</a>
+          </li>
+        </ul>
+
+        <div class="gift-card__box">
+          <div class="gift-card__slider">
+            <div class="gift-card__slide">
+              <img src="data/gift-card-img-1.webp" width="1200" height="600" alt="">
+            </div>
+            <div class="gift-card__slide">
+              <img src="data/gift-card-img-1.webp" width="1200" height="600" alt="">
+            </div>
+            <div class="gift-card__slide">
+              <img src="data/gift-card-img-1.webp" width="1200" height="600" alt="">
+            </div>
+            <div class="gift-card__slide">
+              <img src="data/gift-card-img-1.webp" width="1200" height="600" alt="">
+            </div>
+          </div>
+          <div class="gift-card__item">
+            <div class="gift-card__content">
+              <div class="main-subtitle">номиналом от 0 до 50000 грн</div>
+              <div class="gift-card__title">Подарочная карта для него</div>
+                <p style="text-align: justify; ">Если вы хотите впечатлить кого-то уникальным предметом, несущим культурное наследие в качестве подарка, но сомневаетесь в выборе, если хотите порадовать родных и близких действительно полезным подарком, который принесет удовольствие от пользования, то бутик Empire Hall имеет лучшее решение - подарочные сертификаты на любую сумму!&nbsp;</p><p style="text-align: justify; "><br></p><p style="text-align: justify; ">Такой презент позволит самостоятельно выбрать самое желанное и вызовет благодарность за предоставленный выбор. Бутик предлагает подарочный сертификат в двух вариантах оформления: классический черный и нарядный белый.&nbsp;</p><p style="text-align: justify; "><br></p><p style="text-align: justify; ">Подарочный сертификат можно заказать с доставкой по Украине или приобрести в нашем магазине в городе Харьков.&nbsp;</p><p style="text-align: justify; "><br></p><h3 style="text-align: justify; ">Условия:</h3><p style="text-align: justify; ">Подарочная карта дает право ее владельцу единоразово приобрести товар на сумму номинала. При выборе товара на сумму меньше номинала остаток не компенсируется, если сумма превышает номинал - требуется дополнительная оплата разницы.</p><p style="text-align: justify; "><br></p><ul><li style="text-align: justify;">Подарочная карта не подлежит обмену на денежный эквивалент.</li><li style="text-align: justify;">Подарочная карта не подлежит обмену и возврату.</li><li style="text-align: justify;">Подарочная карта бессрочная.</li></ul>
+
+            </div>
+            <div class="gift-card__form" style="background-image: url('data/gift-card-form-bg.webp');">
+              <div class="gift-card__form-inner">
+                <div class="gift-card__form-title">Приобрести карту</div>
+                <select name="select-sum">
+                  <option value="" selected disabled>-- Сумма на карте --</option>
+                  <option value="">1000</option>
+                  <option value="">100000</option>
+                  <option value="">500000</option>
+                </select>
+                <div class="gift-card__quantity">
+                  <div class="gift-card__quantity-title">Количество:</div>
+                  <div class="product-quantity">
+                    <button class="product-quantity__button product-quantity__minus"><svg xmlns="http://www.w3.org/2000/svg" width="7" height="1" viewBox="0 0 7 1"><rect  class="cls-1" width="7" height="1"/></svg></button>
+                    <input class="product-quantity__input" type="number" name="product-quantity" value="1" min="1" max="999" readonly>
+                    <button class="product-quantity__button product-quantity__plus"><svg xmlns="http://www.w3.org/2000/svg" width="7" height="7" viewBox="0 0 7 7"><path d="M1308,350h7v1h-7v-1Zm3-3h1v7h-1v-7Z" transform="translate(-1308 -347)"/></svg></button>
+                  </div>
+                </div>
+                <a class="main-button" href="#">Добавить в список покупок </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    {% include 'footer.html' %}
+  </div>
+  {% include 'js.html' %}
+</body>
+</html>

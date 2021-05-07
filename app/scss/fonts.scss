@@ -1,0 +1,16 @@
+@mixin font($fontname, $filename, $fontweight, $fontstyle) {
+  @font-face {
+    font-family: $fontname;
+    src: url(#{'../fonts/'+$fontname+'/'+$filename+'.woff'}) format("woff");
+    font-weight: $fontweight;
+    font-style: $fontstyle;
+    font-display: swap;
+  }
+}
+@import url('https://fonts.googleapis.com/css2?family=Alice&display=swap');
+@include font('Raleway', 'RalewayLight', 300, normal);
+@include font('Raleway', 'RalewayRegular', 400, normal);
+@include font('Raleway', 'RalewayItalic', 400, italic);
+@include font('Raleway', 'RalewayMedium', 500, normal);
+@include font('Raleway', 'RalewaySemiBold', 600, normal);
+@include font('Raleway', 'RalewayBold', 700, normal);

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+{% include 'head.html' %}
+  <body>
+    <div class="wrapper">
+    {% include 'header.html' %}
+      
+    <div class="head-block">
+      <ol class="breadcrumb" itemscope itemtype="http://schema.org/BreadcrumbList">
+        <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+          <a itemprop="item" href="https://example.com/dresses"><span itemprop="name">Главная</span></a>
+          <meta itemprop="position" content="1" />
+        </li>
+        <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+          <span itemprop="name">Личный кабинет</span>
+          <meta itemprop="position" content="2" />
+        </li>
+      </ol>
+      <div class="head-title">Личный кабинет</div>
+    </div>
+
+    <div class="area">
+      <div class="area__sidebar">
+        <div class="area__box">
+          <div class="area__userinfo">
+            <div class="area__userinfo-avatar">
+              <img src="images/no-avatar.svg" width="29" height="29" alt="">
+            </div>
+            <div class="area__userinfo-name">Дмитрий Макогон</div>
+          </div>
+        </div>
+        <nav class="area__nav">
+          <ul class="area__nav-list">
+            <li class="area__nav-item">
+              <a href="#">Мои данные</a>
+            </li>
+            <li class="area__nav-item">
+              <a href="#">Мои заказы</a>
+            </li>
+            <li class="area__nav-item">
+              <a href="#">Избранное</a>
+            </li>
+            <li class="area__nav-item">
+              <a href="#">Смена пароля</a>
+            </li>
+            <li class="area__nav-item active">
+              <a href="#">PDF Каталог</a>
+            </li>
+            <li class="area__nav-item">
+              <a href="#">выход</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div class="area__main">
+        <div class="area__top">
+          <div class="area__title">PDF Каталог</div>
+        </div>
+
+        <div class="pdf-block__list">
+          <div class="pdf-block__item">
+            <a href="data/pdf/pdf-book-1.pdf" target="_blank" class="pdf-block__image">
+              <img data-src="data/pdf-block-img-1.webp" width="452" height="320" alt="" class="lazyload">
+            </a>
+            <div class="pdf-block__title">первая коллекция бренда Baccarat</div>
+            <a class="pdf-block__link" href="" download="data/pdf/pdf-book-1.pdf">
+              <img data-class="icon-pdf" src="/images/pdf.svg" alt="" class="lazyload">
+              <span>Скачать PDF каталог</span>
+            </a>
+          </div>
+          <div class="pdf-block__item">
+            <a href="data/pdf/pdf-book-1.pdf" target="_blank" class="pdf-block__image">
+              <img data-src="data/pdf-block-img-2.webp" width="452" height="320" alt="" class="lazyload">
+            </a>
+            <div class="pdf-block__title">первая коллекция бренда Baccarat</div>
+            <a class="pdf-block__link" href="" download="data/pdf/pdf-book-1.pdf">
+              <img data-class="icon-pdf" src="/images/pdf.svg" alt="" class="lazyload">
+              <span>Скачать PDF каталог</span>
+            </a>
+          </div>
+          <div class="pdf-block__item">
+            <a href="data/pdf/pdf-book-1.pdf" target="_blank" class="pdf-block__image">
+              <img data-src="data/pdf-block-img-1.webp" width="452" height="320" alt="" class="lazyload">
+            </a>
+            <div class="pdf-block__title">первая коллекция бренда Baccarat</div>
+            <a class="pdf-block__link" href="" download="data/pdf/pdf-book-1.pdf">
+              <img data-class="icon-pdf" src="/images/pdf.svg" alt="" class="lazyload">
+              <span>Скачать PDF каталог</span>
+            </a>
+          </div>
+          <div class="pdf-block__item">
+            <a href="data/pdf/pdf-book-1.pdf" target="_blank" class="pdf-block__image">
+              <img data-src="data/pdf-block-img-2.webp" width="452" height="320" alt="" class="lazyload">
+            </a>
+            <div class="pdf-block__title">первая коллекция бренда Baccarat</div>
+            <a class="pdf-block__link" href="" download="data/pdf/pdf-book-1.pdf">
+              <img data-class="icon-pdf" src="/images/pdf.svg" alt="" class="lazyload">
+              <span>Скачать PDF каталог</span>
+            </a>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+
+    {% include 'footer.html' %}
+  </div>
+  {% include 'js.html' %}
+</body>
+</html>

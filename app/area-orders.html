@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+{% include 'head.html' %}
+  <body>
+    <div class="wrapper">
+    {% include 'header.html' %}
+      
+    <div class="head-block">
+      <ol class="breadcrumb" itemscope itemtype="http://schema.org/BreadcrumbList">
+        <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+          <a itemprop="item" href="https://example.com/dresses"><span itemprop="name">Главная</span></a>
+          <meta itemprop="position" content="1" />
+        </li>
+        <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+          <span itemprop="name">Личный кабинет</span>
+          <meta itemprop="position" content="2" />
+        </li>
+      </ol>
+      <div class="head-title">Личный кабинет</div>
+    </div>
+
+    <div class="area">
+      <div class="area__sidebar">
+        <div class="area__box">
+          <div class="area__userinfo">
+            <div class="area__userinfo-avatar">
+              <img src="images/no-avatar.svg" width="29" height="29" alt="">
+            </div>
+            <div class="area__userinfo-name">Дмитрий Макогон</div>
+          </div>
+        </div>
+        <nav class="area__nav">
+          <ul class="area__nav-list">
+            <li class="area__nav-item">
+              <a href="#">Мои данные</a>
+            </li>
+            <li class="area__nav-item active">
+              <a href="#">Мои заказы</a>
+            </li>
+            <li class="area__nav-item">
+              <a href="#">Избранное</a>
+            </li>
+            <li class="area__nav-item">
+              <a href="#">Смена пароля</a>
+            </li>
+            <li class="area__nav-item">
+              <a href="#">PDF Каталог</a>
+            </li>
+            <li class="area__nav-item">
+              <a href="#">выход</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div class="area__main">
+        <div class="area__top">
+          <div class="area__title">Мои заказы</div>
+        </div>
+        <div class="orders-history__wrap">
+          <div class="orders-history__block">
+            <div class="orders-history__head">
+              <div class="orders-history__head-item">№ заказа</div>
+              <div class="orders-history__head-item">Дата заказа</div>
+              <div class="orders-history__head-item">Статус</div>
+              <div class="orders-history__head-item">Количество</div>
+              <div class="orders-history__head-item">Общая сумма</div>
+              <div class="orders-history__head-item"></div>
+            </div>
+            <div class="orders-history__list">
+              <div class="orders-history__item acardion__item">
+                <div class="orders-history__title acardion__title">
+                  <div class="orders-history__title-item orders-history__number">17474221</div>
+                  <div class="orders-history__title-item orders-history__date">13.04.2018</div>
+                  <div class="orders-history__title-item orders-history__status">Успешен</div>
+                  <div class="orders-history__title-item orders-history__quantity">1</div>
+                  <div class="orders-history__price">7 245 UAH</div>
+                  <div class="orders-history__icon"></div>
+                </div>
+                <div class="orders-history__inner acardion__inner">
+                  <div class="orders-history__content acardion__content">     
+                    <div class="order__item">
+                      <div class="order__image">
+                        <a href="#">
+                          <img data-src="data/order-image-1.webp" width="170" height="170" alt="" class="lazyload">
+                        </a>
+                      </div>
+                      <div class="order__info">
+                        <div class="order__info-top">
+                          <div class="order__top-box">
+                            <div class="order__title">
+                              <a href="#">"Laque de Chine" Dinner Plate</a>
+                            </div>
+                            <div class="order__article">
+                              Артикул:
+                              <span>4169667</span>
+                            </div>
+                          </div>
+                          <div class="order__options">
+                            <div class="order__options-item">
+                              <div class="order__options-title">Цвет:</div>
+                              <div class="order__options-value">Темно - синий</div>
+                            </div>
+                            <div class="order__options-item">
+                              <div class="order__options-title">Количество:</div>
+                              <div class="order__options-value">12</div>
+                            </div>
+                            <div class="order__options-item">
+                              <div class="order__options-title">Цена за едн.:</div>
+                              <div class="order__options-value price">24,804 uah</div>
+                            </div>
+                            <div class="order__options-item">
+                              <div class="order__options-title">Итого:</div>
+                              <div class="order__options-value price">24,804 uah</div>
+                            </div>
+
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="order__item">
+                      <div class="order__image">
+                        <a href="#">
+                          <img data-src="data/order-image-1.webp" width="170" height="170" alt="" class="lazyload">
+                        </a>
+                      </div>
+                      <div class="order__info">
+                        <div class="order__info-top">
+                          <div class="order__top-box">
+                            <div class="order__title">
+                              <a href="#">"Laque de Chine" Dinner Plate</a>
+                            </div>
+                            <div class="order__article">
+                              Артикул:
+                              <span>4169667</span>
+                            </div>
+                          </div>
+                          <div class="order__options">
+                            <div class="order__options-item">
+                              <div class="order__options-title">Цвет:</div>
+                              <div class="order__options-value">Темно - синий</div>
+                            </div>
+                            <div class="order__options-item">
+                              <div class="order__options-title">Количество:</div>
+                              <div class="order__options-value">12</div>
+                            </div>
+                            <div class="order__options-item">
+                              <div class="order__options-title">Цена за едн.:</div>
+                              <div class="order__options-value no-price">Нет цены</div>
+                            </div>
+                            <div class="order__options-item">
+                              <div class="order__options-title">Итого:</div>
+                              <div class="order__options-value no-price">Нет цены</div>
+                            </div>
+
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="order__bottom">
+                      <div class="order__total">
+                        Общая стоимость:
+                        <span>24,804 uah</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="orders-history__item acardion__item">
+                <div class="orders-history__title acardion__title">
+                  <div class="orders-history__title-item orders-history__number">17474221</div>
+                  <div class="orders-history__title-item orders-history__date">13.04.2018</div>
+                  <div class="orders-history__title-item orders-history__status">Успешен</div>
+                  <div class="orders-history__title-item orders-history__quantity">1</div>
+                  <div class="orders-history__price">7 245 UAH</div>
+                  <div class="orders-history__icon"></div>
+                </div>
+                <div class="orders-history__inner acardion__inner">
+                  <div class="orders-history__content acardion__content">     
+                    <div class="order__item">
+                      <div class="order__image">
+                        <a href="#">
+                          <img data-src="data/order-image-1.webp" width="170" height="170" alt="" class="lazyload">
+                        </a>
+                      </div>
+                      <div class="order__info">
+                        <div class="order__info-top">
+                          <div class="order__top-box">
+                            <div class="order__title">
+                              <a href="#">"Laque de Chine" Dinner Plate</a>
+                            </div>
+                            <div class="order__article">
+                              Артикул:
+                              <span>4169667</span>
+                            </div>
+                          </div>
+                          <div class="order__options">
+                            <div class="order__options-item">
+                              <div class="order__options-title">Цвет:</div>
+                              <div class="order__options-value">Темно - синий</div>
+                            </div>
+                            <div class="order__options-item">
+                              <div class="order__options-title">Количество:</div>
+                              <div class="order__options-value">12</div>
+                            </div>
+                            <div class="order__options-item">
+                              <div class="order__options-title">Цена за едн.:</div>
+                              <div class="order__options-value price">24,804 uah</div>
+                            </div>
+                            <div class="order__options-item">
+                              <div class="order__options-title">Итого:</div>
+                              <div class="order__options-value price">24,804 uah</div>
+                            </div>
+
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="order__item">
+                      <div class="order__image">
+                        <a href="#">
+                          <img data-src="data/order-image-1.webp" width="170" height="170" alt="" class="lazyload">
+                        </a>
+                      </div>
+                      <div class="order__info">
+                        <div class="order__info-top">
+                          <div class="order__top-box">
+                            <div class="order__title">
+                              <a href="#">"Laque de Chine" Dinner Plate</a>
+                            </div>
+                            <div class="order__article">
+                              Артикул:
+                              <span>4169667</span>
+                            </div>
+                          </div>
+                          <div class="order__options">
+                            <div class="order__options-item">
+                              <div class="order__options-title">Цвет:</div>
+                              <div class="order__options-value">Темно - синий</div>
+                            </div>
+                            <div class="order__options-item">
+                              <div class="order__options-title">Количество:</div>
+                              <div class="order__options-value">12</div>
+                            </div>
+                            <div class="order__options-item">
+                              <div class="order__options-title">Цена за едн.:</div>
+                              <div class="order__options-value no-price">Нет цены</div>
+                            </div>
+                            <div class="order__options-item">
+                              <div class="order__options-title">Итого:</div>
+                              <div class="order__options-value no-price">Нет цены</div>
+                            </div>
+
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="order__bottom">
+                      <div class="order__total">
+                        Общая стоимость:
+                        <span>24,804 uah</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="orders-history__item acardion__item">
+                <div class="orders-history__title acardion__title">
+                  <div class="orders-history__title-item orders-history__number">17474221</div>
+                  <div class="orders-history__title-item orders-history__date">13.04.2018</div>
+                  <div class="orders-history__title-item orders-history__status">Успешен</div>
+                  <div class="orders-history__title-item orders-history__quantity">1</div>
+                  <div class="orders-history__price">7 245 UAH</div>
+                  <div class="orders-history__icon"></div>
+                </div>
+                <div class="orders-history__inner acardion__inner">
+                  <div class="orders-history__content acardion__content">     
+                    <div class="order__item">
+                      <div class="order__image">
+                        <a href="#">
+                          <img data-src="data/order-image-1.webp" width="170" height="170" alt="" class="lazyload">
+                        </a>
+                      </div>
+                      <div class="order__info">
+                        <div class="order__info-top">
+                          <div class="order__top-box">
+                            <div class="order__title">
+                              <a href="#">"Laque de Chine" Dinner Plate</a>
+                            </div>
+                            <div class="order__article">
+                              Артикул:
+                              <span>4169667</span>
+                            </div>
+                          </div>
+                          <div class="order__options">
+                            <div class="order__options-item">
+                              <div class="order__options-title">Цвет:</div>
+                              <div class="order__options-value">Темно - синий</div>
+                            </div>
+                            <div class="order__options-item">
+                              <div class="order__options-title">Количество:</div>
+                              <div class="order__options-value">12</div>
+                            </div>
+                            <div class="order__options-item">
+                              <div class="order__options-title">Цена за едн.:</div>
+                              <div class="order__options-value price">24,804 uah</div>
+                            </div>
+                            <div class="order__options-item">
+                              <div class="order__options-title">Итого:</div>
+                              <div class="order__options-value price">24,804 uah</div>
+                            </div>
+
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="order__item">
+                      <div class="order__image">
+                        <a href="#">
+                          <img data-src="data/order-image-1.webp" width="170" height="170" alt="" class="lazyload">
+                        </a>
+                      </div>
+                      <div class="order__info">
+                        <div class="order__info-top">
+                          <div class="order__top-box">
+                            <div class="order__title">
+                              <a href="#">"Laque de Chine" Dinner Plate</a>
+                            </div>
+                            <div class="order__article">
+                              Артикул:
+                              <span>4169667</span>
+                            </div>
+                          </div>
+                          <div class="order__options">
+                            <div class="order__options-item">
+                              <div class="order__options-title">Цвет:</div>
+                              <div class="order__options-value">Темно - синий</div>
+                            </div>
+                            <div class="order__options-item">
+                              <div class="order__options-title">Количество:</div>
+                              <div class="order__options-value">12</div>
+                            </div>
+                            <div class="order__options-item">
+                              <div class="order__options-title">Цена за едн.:</div>
+                              <div class="order__options-value no-price">Нет цены</div>
+                            </div>
+                            <div class="order__options-item">
+                              <div class="order__options-title">Итого:</div>
+                              <div class="order__options-value no-price">Нет цены</div>
+                            </div>
+
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="order__bottom">
+                      <div class="order__total">
+                        Общая стоимость:
+                        <span>24,804 uah</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    {% include 'footer.html' %}
+  </div>
+  {% include 'js.html' %}
+</body>
+</html>

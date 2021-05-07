@@ -1,0 +1,777 @@
+<!DOCTYPE html>
+<html lang="en">
+{% include 'head.html' %}
+  <body class="main-page main">
+  {% include 'preloader.html' %}
+
+    <div class="wrapper">
+
+      {% include 'header.html' %}
+
+      <div class="main-section">
+        <div class="main-section__slider">
+          <div class="main-section__slide" style="background-image: url('data/main-section-image-1.webp')">
+            <div class="shadow"></div>
+            <div class="main-section__content">
+              <div class="main-section__title">Столовое серебро</div>
+              <div class="main-section__text">Алмазное стекло, которое гранят подобно драгоценным камням, 
+его сияние и прозрачность не уступает бриллиантам.
+У нас вы сможете приобрести бокалы и вазы брендов, 
+сделавших хрусталь достоянием всего мира.</div>
+            </div>
+          </div>
+          <div class="main-section__slide" style="background-image: url('data/main-section-image-1.webp')">
+            <div class="shadow"></div>
+            <div class="main-section__content">
+              <div class="main-section__title">Empire Hall 2</div>
+              <div class="main-section__text">Vivere in deliciis</div>
+            </div>
+          </div>
+          <div class="main-section__slide" style="background-image: url('data/main-section-image-1.webp')">
+            
+          </div>
+          <div class="main-section__slide" style="background-image: url('data/main-section-image-1.webp')">
+            <div class="shadow"></div>
+            <div class="main-section__content">
+              <div class="main-section__title">Empire Hall 2</div>
+              <div class="main-section__text">Vivere in deliciis</div>
+            </div>
+          </div>
+        </div>
+        <a href="#" class="main-section__button">
+          <span>
+            <svg viewBox="0 0 100 100" style="display: block; width: 100%;">
+              <path d="M 50,50 m 0,-49.5 a 49.5,49.5 0 1 1 0,99 a 49.5,49.5 0 1 1 0,-99" stroke="#fff" stroke-width="1" fill-opacity="0" ></path>
+            </svg>
+          </span>
+          В каталог
+        </a>
+      </div>
+
+      <div class="main-brands">
+        <div class="main-brands__list">
+          <div class="main-brands__item">
+            <img data-src="data/main-brands-img-1.webp" alt="" class="lazyload">
+          </div>
+          <div class="main-brands__item">
+            <img data-src="data/main-brands-img-2.webp" alt="" class="lazyload">
+          </div>
+          <div class="main-brands__item">
+            <img data-src="data/main-brands-img-3.webp" alt="" class="lazyload">
+          </div>
+          <div class="main-brands__item">
+            <img data-src="data/main-brands-img-4.webp" alt="" class="lazyload">
+          </div>
+          <div class="main-brands__item">
+            <img data-src="data/main-brands-img-1.webp" alt="" class="lazyload">
+          </div>
+          <div class="main-brands__item">
+            <img data-src="data/main-brands-img-2.webp" alt="" class="lazyload">
+          </div>
+          <div class="main-brands__item">
+            <img data-src="data/main-brands-img-3.webp" alt="" class="lazyload">
+          </div>
+        </div>
+      </div>
+
+      <div class="popular-products">
+        <div class="main-subtitle">Популярное</div>
+        <div class="popular-products__top">
+          <div class="popular-products__title">Магазин</div>
+          <div class="popular-products__navigation">
+            <div class="prev-arrow"></div>
+            <div class="next-arrow"></div>
+            <span class="popular-products__progress"></span>
+          </div>
+        </div>
+        <div class="popular-products__slider">
+          <div class="product__item">
+            <div class="product__title">
+              <a href="#">Bernardaud</a>
+            </div>
+            <div class="product__image">
+              <a href="#">
+                <img data-src="data/product-img-1.webp" width="370" height="370" alt="" class="lazyload">
+              </a>
+            </div>
+            <div class="product__box">
+              <div class="product__price">
+                <div class="product__no-price-text">Нет цены</div>
+                <div class="product__no-price-btm popup-open" data-for="popup-callback">Запросить цену</div>
+              </div>
+              <a class="product__link" href="#">
+                <svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="images/sprite.svg#link-arrow"></use></svg>
+              </a>
+            </div>
+          </div>
+          <div class="product__item">
+            <div class="product__title">
+              <a href="#">Bernardaud</a>
+            </div>
+            <div class="product__image">
+              <a href="#">
+                <img data-src="data/product-img-1.webp" width="370" height="370" alt="" class="lazyload">
+              </a>
+            </div>
+            <div class="product__box">
+              <div class="product__price">
+                <div class="product__price-old">24,804 uah</div>
+                <div class="product__price-new">24,804 uah</div>
+              </div>
+              <a class="product__link" href="#">
+                <svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="images/sprite.svg#link-arrow"></use></svg>
+              </a>
+            </div>
+          </div>
+          <div class="product__item">
+            <div class="product__title">
+              <a href="#">Bernardaud</a>
+            </div>
+            <div class="product__image">
+              <a href="#">
+                <img data-src="data/product-img-1.webp" width="370" height="370" alt="" class="lazyload">
+              </a>
+            </div>
+            <div class="product__box">
+              <div class="product__price">
+                <div class="product__no-price-text">Нет цены</div>
+                <div class="product__no-price-btm popup-open" data-for="popup-callback">Запросить цену</div>
+              </div>
+              <a class="product__link" href="#">
+                <svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="images/sprite.svg#link-arrow"></use></svg>
+              </a>
+            </div>
+          </div>
+          <div class="product__item">
+            <div class="product__title">
+              <a href="#">Bernardaud</a>
+            </div>
+            <div class="product__image">
+              <a href="#">
+                <img data-src="data/product-img-1.webp" width="370" height="370" alt="" class="lazyload">
+              </a>
+            </div>
+            <div class="product__box">
+              <div class="product__price">
+                <div class="product__price-old">24,804 uah</div>
+                <div class="product__price-new">24,804 uah</div>
+              </div>
+              <a class="product__link" href="#">
+                <svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="images/sprite.svg#link-arrow"></use></svg>
+              </a>
+            </div>
+          </div>
+        </div>
+        <a class="show-all" href="#">Смотреть все предложения</a>
+      </div>
+
+      <div class="main-catalog" style="background-image: url(data/main-catalog-bg.webp)">
+        <div class="main-catalog__inner">
+          <div class="main-subtitle main-subtitle--silver">Каталог</div>
+          <div class="main-catalog__top">
+            <div class="main-catalog__top-image">
+              <img data-src="data/title-img.svg" width="575" height="51" alt="" class="lazyload">
+            </div>
+            <a class="show-all" class="#">Все категории</a>
+          </div>
+          <div class="main-catalog__list">
+            <a href="#" class="main-catalog__item">
+              <div class="main-catalog__image">
+                <img data-src="data/main-catalog-img-1.webp" width="430" height="524" alt="" class="lazyload">
+                <svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="images/sprite.svg#catalog-decore"></use></svg>
+              </div>
+              <div class="main-catalog__title">Фарфор</div>
+            </a>
+            <a href="#" class="main-catalog__item">
+              <div class="main-catalog__image">
+                <img data-src="data/main-catalog-img-2.webp" width="430" height="524" alt="" class="lazyload">
+                <svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="images/sprite.svg#catalog-decore-lg"></use></svg>
+              </div>
+              <div class="main-catalog__title">Столовые приборы</div>
+            </a>
+            <a href="#" class="main-catalog__item">
+              <div class="main-catalog__image">
+                <img data-src="data/main-catalog-img-3.webp" width="430" height="524" alt="" class="lazyload">
+                <svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="images/sprite.svg#catalog-decore"></use></svg>
+              </div>
+              <div class="main-catalog__title">Стекло</div>
+            </a>
+            <a href="#" class="main-catalog__item">
+              <div class="main-catalog__image">
+                <img data-src="data/main-catalog-img-4.webp" width="430" height="524" alt="" class="lazyload">
+                <svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="images/sprite.svg#catalog-decore"></use></svg>
+              </div>
+              <div class="main-catalog__title">Фарфор</div>
+            </a>
+            <a href="#" class="main-catalog__item">
+              <div class="main-catalog__image">
+                <img data-src="data/main-catalog-img-5.webp" width="430" height="524" alt="" class="lazyload">
+                <svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="images/sprite.svg#catalog-decore-lg"></use></svg>
+              </div>
+              <div class="main-catalog__title">Столовые приборы</div>
+            </a>
+            <a href="#" class="main-catalog__item">
+              <div class="main-catalog__image">
+                <img data-src="data/main-catalog-img-6.webp" width="430" height="524" alt="" class="lazyload">
+                <svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="images/sprite.svg#catalog-decore"></use></svg>
+              </div>
+              <div class="main-catalog__title">Стекло</div>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="main-inspiration">
+        <div class="main-inspiration__subtitle">Вдохновение</div>
+        <ul class="main-inspiration__nav-list">
+          <li class="main-inspiration__nav-item">CRYSTAL BUBBLES</li>
+          <li class="main-inspiration__nav-item">Haviland "Plumes"</li>
+          <li class="main-inspiration__nav-item">SETS OF GLASSES</li>
+          <li class="main-inspiration__nav-item">Haviland "Plumes"</li>
+        </ul>
+        <div class="main-inspiration__slider">
+          <div class="main-inspiration__slide">
+            <div class="main-inspiration__slide-image">
+              <img data-src="data/main-inspiration-slide-img-1.webp" width="895" height="604" alt="" class="lazyload">
+            </div>
+            <div class="main-inspiration__products">
+              <div class="product__item">
+                <div class="product__title">
+                  <a href="#">Bernardaud</a>
+                </div>
+                <div class="product__image">
+                  <a href="#">
+                    <img data-src="data/product-img-1.webp" width="370" height="370" alt="" class="lazyload">
+                  </a>
+                </div>
+                <div class="product__box">
+                  <div class="product__price">
+                    <div class="product__price-old">24,804 uah</div>
+                    <div class="product__price-new">24,804 uah</div>
+                  </div>
+                  <a class="product__link" href="#">
+                    <svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="images/sprite.svg#link-arrow"></use></svg>
+                  </a>
+                </div>
+              </div>
+              <div class="product__item">
+                <div class="product__title">
+                  <a href="#">"Laque de Chine" Dinner Plate</a>
+                </div>
+                <div class="product__image">
+                  <a href="#">
+                    <img data-src="data/product-img-2.webp" width="370" height="370" alt="" class="lazyload">
+                  </a>
+                </div>
+                <div class="product__box">
+                  <div class="product__price">
+                    <div class="product__price-old">24,804 uah</div>
+                    <div class="product__price-new">24,804 uah</div>
+                  </div>
+                  <a class="product__link" href="#">
+                    <svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="images/sprite.svg#link-arrow"></use></svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="main-inspiration__slide">
+            <div class="main-inspiration__slide-image">
+              <img data-src="data/main-inspiration-slide-img-1.webp" width="895" height="604" alt="" class="lazyload">
+            </div>
+            <div class="main-inspiration__products">
+              <div class="product__item">
+                <div class="product__title">
+                  <a href="#">Bernardaud</a>
+                </div>
+                <div class="product__image">
+                  <a href="#">
+                    <img data-src="data/product-img-2.webp" width="370" height="370" alt="" class="lazyload">
+                  </a>
+                </div>
+                <div class="product__box">
+                  <div class="product__price">
+                    <div class="product__price-old">24,804 uah</div>
+                    <div class="product__price-new">24,804 uah</div>
+                  </div>
+                  <a class="product__link" href="#">
+                    <svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="images/sprite.svg#link-arrow"></use></svg>
+                  </a>
+                </div>
+              </div>
+              <div class="product__item">
+                <div class="product__title">
+                  <a href="#">"Laque de Chine" Dinner Plate</a>
+                </div>
+                <div class="product__image">
+                  <a href="#">
+                    <img data-src="data/product-img-1.webp" width="370" height="370" alt="" class="lazyload">
+                  </a>
+                </div>
+                <div class="product__box">
+                  <div class="product__price">
+                    <div class="product__price-old">24,804 uah</div>
+                    <div class="product__price-new">24,804 uah</div>
+                  </div>
+                  <a class="product__link" href="#">
+                    <svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="images/sprite.svg#link-arrow"></use></svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="main-inspiration__slide">
+            <div class="main-inspiration__slide-image">
+              <img data-src="data/main-inspiration-slide-img-1.webp" width="895" height="604" alt="" class="lazyload">
+            </div>
+            <div class="main-inspiration__products">
+              <div class="product__item">
+                <div class="product__title">
+                  <a href="#">Bernardaud</a>
+                </div>
+                <div class="product__image">
+                  <a href="#">
+                    <img data-src="data/product-img-1.webp" width="370" height="370" alt="" class="lazyload">
+                  </a>
+                </div>
+                <div class="product__box">
+                  <div class="product__price">
+                    <div class="product__price-old">24,804 uah</div>
+                    <div class="product__price-new">24,804 uah</div>
+                  </div>
+                  <a class="product__link" href="#">
+                    <svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="images/sprite.svg#link-arrow"></use></svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="main-inspiration__slide">
+            <div class="main-inspiration__slide-image">
+              <img data-src="data/main-inspiration-slide-img-1.webp" width="895" height="604" alt="" class="lazyload">
+            </div>
+            <div class="main-inspiration__products">
+              <div class="product__item">
+                <div class="product__title">
+                  <a href="#">Bernardaud</a>
+                </div>
+                <div class="product__image">
+                  <a href="#">
+                    <img data-src="data/product-img-1.webp" width="370" height="370" alt="" class="lazyload">
+                  </a>
+                </div>
+                <div class="product__box">
+                  <div class="product__price">
+                    <div class="product__price-old">24,804 uah</div>
+                    <div class="product__price-new">24,804 uah</div>
+                  </div>
+                  <a class="product__link" href="#">
+                    <svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="images/sprite.svg#link-arrow"></use></svg>
+                  </a>
+                </div>
+              </div>
+              <div class="product__item">
+                <div class="product__title">
+                  <a href="#">"Laque de Chine" Dinner Plate</a>
+                </div>
+                <div class="product__image">
+                  <a href="#">
+                    <img data-src="data/product-img-2.webp" width="370" height="370" alt="" class="lazyload">
+                  </a>
+                </div>
+                <div class="product__box">
+                  <div class="product__price">
+                    <div class="product__price-old">24,804 uah</div>
+                    <div class="product__price-new">24,804 uah</div>
+                  </div>
+                  <a class="product__link" href="#">
+                    <svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="images/sprite.svg#link-arrow"></use></svg>
+                  </a>
+                </div>
+              </div>
+              <div class="product__item">
+                <div class="product__title">
+                  <a href="#">Bernardaud</a>
+                </div>
+                <div class="product__image">
+                  <a href="#">
+                    <img data-src="data/product-img-1.webp" width="370" height="370" alt="" class="lazyload">
+                  </a>
+                </div>
+                <div class="product__box">
+                  <div class="product__price">
+                    <div class="product__price-old">24,804 uah</div>
+                    <div class="product__price-new">24,804 uah</div>
+                  </div>
+                  <a class="product__link" href="#">
+                    <svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="images/sprite.svg#link-arrow"></use></svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <a class="show-all" href="#">Смотреть все комбинации</a>
+      </div>
+
+      <div class="main-advantages" style="background-image: url(data/main-catalog-bg.webp)">
+        <div class="main-advantages__inner">
+          <div class="main-subtitle main-subtitle--silver">преимущества</div>
+          <div class="main-advantages__top">
+            <div class="main-advantages__main-image">
+              <img data-src="data/title-img.svg" width="575" height="51" alt="" class="lazyload">
+            </div>
+            <div class="main-advantages__navigation">
+              <div class="prev-arrow slick-arrow" style=""><div class="popular-products__arrow popular-products__prev-arrow"><svg viewBox="0 0 100 100" style="display: block; width: 100%;"><path d="M 50,50 m 0,-49.5 a 49.5,49.5 0 1 1 0,99 a 49.5,49.5 0 1 1 0,-99" stroke="#C4C4C4" stroke-width="1" fill-opacity="0"></path></svg></div></div>
+              <div class="next-arrow slick-arrow" style=""><div class="popular-products__arrow popular-products__next-arrow"><svg viewBox="0 0 100 100" style="display: block; width: 100%;"><path d="M 50,50 m 0,-49.5 a 49.5,49.5 0 1 1 0,99 a 49.5,49.5 0 1 1 0,-99" stroke="#C4C4C4" stroke-width="1" fill-opacity="0"></path></svg></div></div>
+            </div>
+          </div>
+
+          <div class="main-advantages__list">
+            <div class="main-advantages__item" style="background-image: url('data/advantages-bg.webp');">
+              <div class="main-advantages__box">
+                <div class="main-advantages__image">
+                  <img data-src="data/main-advantages-img-1.svg" width="80" height="109" alt="" class="lazyload">
+                </div>
+                <div class="main-advantages__title">Дизайнерский подход</div>
+                <div class="main-advantages__text">В нашей команде работают профессиональные менеджеры – декораторы. Они помогут вам подобрать посуду, столовые приборы, текстиль и аксессуары, которые идеально дополнять ваш интерьер, и станут частью дизайна вашего дома, офиса, ресторана.</div>
+              </div>
+            </div>
+            <div class="main-advantages__item" style="background-image: url('data/advantages-bg.webp');">
+              <div class="main-advantages__box">
+                <div class="main-advantages__image">
+                  <img data-src="data/main-advantages-img-2.svg" width="80" height="109" alt="" class="lazyload">
+                </div>
+                <div class="main-advantages__title">Подача</div>
+                <div class="main-advantages__text">В нашей команде работают профессиональные менеджеры – декораторы. Они помогут вам подобрать посуду, столовые приборы, текстиль и аксессуары, которые идеально дополнять ваш интерьер, и станут частью дизайна вашего дома, офиса, ресторана.</div>
+              </div>
+            </div>
+            <div class="main-advantages__item" style="background-image: url('data/advantages-bg.webp');">
+              <div class="main-advantages__box">
+                <div class="main-advantages__image">
+                  <img data-src="data/main-advantages-img-3.svg" width="80" height="109" alt="" class="lazyload">
+                </div>
+                <div class="main-advantages__title">Мастер классы</div>
+                <div class="main-advantages__text">В нашей команде работают профессиональные менеджеры – декораторы. Они помогут вам подобрать посуду, столовые приборы, текстиль и аксессуары, которые идеально дополнять ваш интерьер, и станут частью дизайна вашего дома, офиса, ресторана.</div>
+              </div>
+            </div>
+            <div class="main-advantages__item" style="background-image: url('data/advantages-bg.webp');">
+              <div class="main-advantages__box">
+                <div class="main-advantages__image">
+                  <img data-src="data/main-advantages-img-1.svg" width="80" height="109" alt="" class="lazyload">
+                </div>
+                <div class="main-advantages__title">Дизайнерский подход</div>
+                <div class="main-advantages__text">В нашей команде работают профессиональные менеджеры – декораторы. Они помогут вам подобрать посуду, столовые приборы, текстиль и аксессуары, которые идеально дополнять ваш интерьер, и станут частью дизайна вашего дома, офиса, ресторана.</div>
+              </div>
+            </div>
+            <div class="main-advantages__item" style="background-image: url('data/advantages-bg.webp');">
+              <div class="main-advantages__box">
+                <div class="main-advantages__image">
+                  <img data-src="data/main-advantages-img-2.svg" width="80" height="109" alt="" class="lazyload">
+                </div>
+                <div class="main-advantages__title">Подача</div>
+                <div class="main-advantages__text">В нашей команде работают профессиональные менеджеры – декораторы. Они помогут вам подобрать посуду, столовые приборы, текстиль и аксессуары, которые идеально дополнять ваш интерьер, и станут частью дизайна вашего дома, офиса, ресторана.</div>
+              </div>
+            </div>
+            <div class="main-advantages__item" style="background-image: url('data/advantages-bg.webp');">
+              <div class="main-advantages__box">
+                <div class="main-advantages__image">
+                  <img data-src="data/main-advantages-img-3.svg" width="80" height="109" alt="" class="lazyload">
+                </div>
+                <div class="main-advantages__title">Мастер классы</div>
+                <div class="main-advantages__text">В нашей команде работают профессиональные менеджеры – декораторы. Они помогут вам подобрать посуду, столовые приборы, текстиль и аксессуары, которые идеально дополнять ваш интерьер, и станут частью дизайна вашего дома, офиса, ресторана.</div>
+              </div>
+            </div>
+          </div>
+        
+        </div>
+      </div>
+
+
+      <div class="gift-card">
+        <div class="gift-card__inner">
+          <ul class="gift-card__tabs tabs-list">
+            <li class="gift-card__tabs-item tabs-list__item">
+              <a href="#gift-card-1" class="tabs-list__link">Мужская карта</a>
+            </li>
+            <li class="gift-card__tabs-item tabs-list__item">
+              <a href="#gift-card-2" class="tabs-list__link">Женская карта</a>
+            </li>
+            <li class="gift-card__tabs-item tabs-list__item">
+              <a href="#gift-card-3" class="tabs-list__link">Свадебный сертификат</a>
+            </li>
+          </ul>
+          <div class="gift-card__holder">
+            <div id="gift-card-1" class="gift-card__box tab">
+              <div class="gift-card__slider">
+                <div class="gift-card__slide">
+                  <img data-src="data/gift-card-img-1.webp" width="1200" height="600" alt="" class="lazyload">
+                </div>
+                <div class="gift-card__slide">
+                  <img data-src="data/gift-card-img-1.webp" width="1200" height="600" alt="" class="lazyload">
+                </div>
+                <div class="gift-card__slide">
+                  <img data-src="data/gift-card-img-1.webp" width="1200" height="600" alt="" class="lazyload">
+                </div>
+                <div class="gift-card__slide">
+                  <img data-src="data/gift-card-img-1.webp" width="1200" height="600" alt="" class="lazyload">
+                </div>
+              </div>
+              <div class="gift-card__item">
+                <div class="gift-card__content">
+                  <div class="main-subtitle">номиналом от 0 до 50000 грн</div>
+                  <div class="gift-card__title">Подарочная карта для него</div>
+                  <div class="gift-card__description">Подарочная карта даёт право её владельцу единоразово приобрести товар на сумму номинала.</div>
+                  <div class="gift-card__text">При выборе товара на сумму меньше номинала - остаток не компенсируется, если сумма превышает номинал - требуется дополнительная оплата разницы.</div>
+                  <ul class="gift-card__content-list">
+                    <li class="gift-card__content-item">Подарочная карта не подлежит обмену на денежный эквивалент.</li>
+                    <li class="gift-card__content-item">Подарочная карта обмену и возврату не подлежит.</li>
+                    <li class="gift-card__content-item">Подарочная карта бессрочная.</li>
+                  </ul>
+                </div>
+                <div class="gift-card__form" style="background-image: url('data/gift-card-form-bg.webp');">
+                  <div class="gift-card__form-inner">
+                    <div class="gift-card__form-title">Приобрести карту</div>
+                    <select name="select-sum">
+                      <option value="" selected disabled>-- Сумма на карте --</option>
+                      <option value="">1000</option>
+                      <option value="">100000</option>
+                      <option value="">500000</option>
+                      <option value="">1000</option>
+                      <option value="">100000</option>
+                      <option value="">500000</option>
+                      <option value="">1000</option>
+                      <option value="">100000</option>
+                      <option value="">500000</option>
+                      <option value="">1000</option>
+                      <option value="">100000</option>
+                      <option value="">500000</option>
+                      <option value="">1000</option>
+                      <option value="">100000</option>
+                      <option value="">500000</option>
+                    </select>
+                    <div class="gift-card__quantity">
+                      <div class="gift-card__quantity-title">Количество:</div>
+                      <div class="product-quantity">
+                        <button class="product-quantity__button product-quantity__minus"><svg xmlns="http://www.w3.org/2000/svg" width="7" height="1" viewBox="0 0 7 1"><rect  class="cls-1" width="7" height="1"/></svg></button>
+                        <input class="product-quantity__input" type="number" name="product-quantity" value="1" min="1" max="999" readonly>
+                        <button class="product-quantity__button product-quantity__plus"><svg xmlns="http://www.w3.org/2000/svg" width="7" height="7" viewBox="0 0 7 7"><path d="M1308,350h7v1h-7v-1Zm3-3h1v7h-1v-7Z" transform="translate(-1308 -347)"/></svg></button>
+                      </div>
+                    </div>
+                    <a class="main-button" href="#">Добавить в список покупок </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div id="gift-card-2" class="gift-card__box tab">
+              <div class="gift-card__slider">
+                <div class="gift-card__slide">
+                  <img data-src="data/gift-card-img-2.webp" width="1200" height="600" alt="" class="lazyload">
+                </div>
+                <div class="gift-card__slide">
+                  <img data-src="data/gift-card-img-2.webp" width="1200" height="600" alt="" class="lazyload">
+                </div>
+                <div class="gift-card__slide">
+                  <img data-src="data/gift-card-img-2.webp" width="1200" height="600" alt="" class="lazyload">
+                </div>
+                <div class="gift-card__slide">
+                  <img data-src="data/gift-card-img-2.webp" width="1200" height="600" alt="" class="lazyload">
+                </div>
+              </div>
+              <div class="gift-card__item">
+                <div class="gift-card__content">
+                  <div class="main-subtitle">номиналом от 0 до 50000 грн</div>
+                  <div class="gift-card__title">Подарочная карта для нее</div>
+                  <div class="gift-card__description">Подарочная карта даёт право её владельцу единоразово приобрести товар на сумму номинала.</div>
+                  <div class="gift-card__text">При выборе товара на сумму меньше номинала - остаток не компенсируется, если сумма превышает номинал - требуется дополнительная оплата разницы.</div>
+                  <ul class="gift-card__content-list">
+                    <li class="gift-card__content-item">Подарочная карта не подлежит обмену на денежный эквивалент.</li>
+                    <li class="gift-card__content-item">Подарочная карта обмену и возврату не подлежит.</li>
+                    <li class="gift-card__content-item">Подарочная карта бессрочная.</li>
+                  </ul>
+                </div>
+                <div class="gift-card__form" style="background-image: url('data/gift-card-form-bg.webp');">
+                  <div class="gift-card__form-inner">
+                    <div class="gift-card__form-title">Приобрести карту</div>
+                    <select name="select-sum">
+                      <option value="" selected disabled>-- Сумма на карте --</option>
+                      <option value="">1000</option>
+                      <option value="">100000</option>
+                      <option value="">500000</option>
+                      <option value="">1000</option>
+                      <option value="">100000</option>
+                      <option value="">500000</option>
+                      <option value="">1000</option>
+                      <option value="">100000</option>
+                      <option value="">500000</option>
+                      <option value="">1000</option>
+                      <option value="">100000</option>
+                      <option value="">500000</option>
+                    </select>
+                    <div class="gift-card__quantity">
+                      <div class="gift-card__quantity-title">Количество:</div>
+                      <div class="product-quantity">
+                        <button class="product-quantity__button product-quantity__minus"><svg xmlns="http://www.w3.org/2000/svg" width="7" height="1" viewBox="0 0 7 1"><rect  class="cls-1" width="7" height="1"/></svg></button>
+                        <input class="product-quantity__input" type="number" name="product-quantity" value="1" min="1" max="999" readonly>
+                        <button class="product-quantity__button product-quantity__plus"><svg xmlns="http://www.w3.org/2000/svg" width="7" height="7" viewBox="0 0 7 7"><path d="M1308,350h7v1h-7v-1Zm3-3h1v7h-1v-7Z" transform="translate(-1308 -347)"/></svg></button>
+                      </div>
+                    </div>
+                    <a class="main-button" href="#">Добавить в список покупок </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div id="gift-card-3" class="gift-card__box tab">
+              <div class="gift-card__slider">
+                <div class="gift-card__slide">
+                  <img data-src="data/gift-card-img-3.webp" width="1200" height="600" alt="" class="lazyload">
+                </div>
+                <div class="gift-card__slide">
+                  <img data-src="data/gift-card-img-3.webp" width="1200" height="600" alt="" class="lazyload">
+                </div>
+                <div class="gift-card__slide">
+                  <img data-src="data/gift-card-img-3.webp" width="1200" height="600" alt="" class="lazyload">
+                </div>
+                <div class="gift-card__slide">
+                  <img data-src="data/gift-card-img-3.webp" width="1200" height="600" alt="" class="lazyload">
+                </div>
+              </div>
+              <div class="gift-card__item">
+                <div class="gift-card__content">
+                  <div class="main-subtitle">номиналом от 0 до 50000 грн</div>
+                  <div class="gift-card__title">Подарочная карта для них</div>
+                  <div class="gift-card__description">Подарочная карта даёт право её владельцу единоразово приобрести товар на сумму номинала.</div>
+                  <div class="gift-card__text">При выборе товара на сумму меньше номинала - остаток не компенсируется, если сумма превышает номинал - требуется дополнительная оплата разницы.</div>
+                  <ul class="gift-card__content-list">
+                    <li class="gift-card__content-item">Подарочная карта не подлежит обмену на денежный эквивалент.</li>
+                    <li class="gift-card__content-item">Подарочная карта обмену и возврату не подлежит.</li>
+                    <li class="gift-card__content-item">Подарочная карта бессрочная.</li>
+                  </ul>
+                </div>
+                <div class="gift-card__form" style="background-image: url('data/gift-card-form-bg.webp');">
+                  <div class="gift-card__form-inner">
+                    <div class="gift-card__form-title">Приобрести карту</div>
+                    <select name="select-sum">
+                      <option value="" selected disabled>-- Сумма на карте --</option>
+                      <option value="">1000</option>
+                      <option value="">100000</option>
+                      <option value="">500000</option>
+                    </select>
+                    <div class="gift-card__quantity">
+                      <div class="gift-card__quantity-title">Количество:</div>
+                      <div class="product-quantity">
+                        <button class="product-quantity__button product-quantity__minus"><svg xmlns="http://www.w3.org/2000/svg" width="7" height="1" viewBox="0 0 7 1"><rect  class="cls-1" width="7" height="1"/></svg></button>
+                        <input class="product-quantity__input" type="number" name="product-quantity" value="1" min="1" max="999" readonly>
+                        <button class="product-quantity__button product-quantity__plus"><svg xmlns="http://www.w3.org/2000/svg" width="7" height="7" viewBox="0 0 7 7"><path d="M1308,350h7v1h-7v-1Zm3-3h1v7h-1v-7Z" transform="translate(-1308 -347)"/></svg></button>
+                      </div>
+                    </div>
+                    <a class="main-button" href="#">Добавить в список покупок </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="instashop">
+        <div class="instashop__main-title">
+          <svg width="34" height="37" viewBox="0 0 34 37" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M23.375 0H10.625C4.75787 0 0 5.17769 0 11.5625V25.4375C0 31.8223 4.75787 37 10.625 37H23.375C29.2421 37 34 31.8223 34 25.4375V11.5625C34 5.17769 29.2421 0 23.375 0ZM30.8125 25.4375C30.8125 29.9006 27.4762 33.5312 23.375 33.5312H10.625C6.52375 33.5312 3.1875 29.9006 3.1875 25.4375V11.5625C3.1875 7.09938 6.52375 3.46875 10.625 3.46875H23.375C27.4762 3.46875 30.8125 7.09938 30.8125 11.5625V25.4375Z" fill="url(#paint0_linear)"/>
+            <path d="M17 9.25C12.3059 9.25 8.5 13.3917 8.5 18.5C8.5 23.6083 12.3059 27.75 17 27.75C21.6941 27.75 25.5 23.6083 25.5 18.5C25.5 13.3917 21.6941 9.25 17 9.25ZM17 24.2812C14.0718 24.2812 11.6875 21.6866 11.6875 18.5C11.6875 15.3111 14.0718 12.7188 17 12.7188C19.9282 12.7188 22.3125 15.3111 22.3125 18.5C22.3125 21.6866 19.9282 24.2812 17 24.2812Z" fill="url(#paint1_linear)"/>
+            <path d="M26.137 9.78847C26.7625 9.78847 27.2696 9.23664 27.2696 8.55591C27.2696 7.87518 26.7625 7.32335 26.137 7.32335C25.5114 7.32335 25.0043 7.87518 25.0043 8.55591C25.0043 9.23664 25.5114 9.78847 26.137 9.78847Z" fill="url(#paint2_linear)"/>
+            <defs>
+            <linearGradient id="paint0_linear" x1="0.641509" y1="19.964" x2="33.1456" y2="19.9401" gradientUnits="userSpaceOnUse">
+            <stop stop-color="#8F6D55"/>
+            <stop offset="1" stop-color="#4D4444"/>
+            </linearGradient>
+            <linearGradient id="paint1_linear" x1="0.641509" y1="19.964" x2="33.1456" y2="19.9401" gradientUnits="userSpaceOnUse">
+            <stop stop-color="#8F6D55"/>
+            <stop offset="1" stop-color="#4D4444"/>
+            </linearGradient>
+            <linearGradient id="paint2_linear" x1="0.641509" y1="19.964" x2="33.1456" y2="19.9401" gradientUnits="userSpaceOnUse">
+            <stop stop-color="#8F6D55"/>
+            <stop offset="1" stop-color="#4D4444"/>
+            </linearGradient>
+            </defs>
+          </svg>
+          instashop
+        </div>
+        <a href="#" class="show-all">Empire Hall @ Instagram</a>
+        <div class="instashop__list">
+          <div class="instashop__item">
+            <div class="instashop__image">
+              <img data-src="data/instashop-img-1.webp" width="430" height="430" alt="" class="lazyload">
+            </div>
+            <div class="instashop__box">
+              <div class="instashop__title">Empire Hall collections 2019</div>
+              <div class="instashop__text">Мы создаем украшения для тех, кто не боится быть собой и умеет действовать решительно.</div>
+              <a href="#" class="instashop__link">Подробнее</a>
+            </div>
+          </div>
+          <div class="instashop__item">
+            <div class="instashop__image">
+              <img data-src="data/instashop-img-2.webp" width="430" height="430" alt="" class="lazyload">
+            </div>
+            <div class="instashop__box">
+              <div class="instashop__title">Empire Hall collections 2019</div>
+              <div class="instashop__text">Мы создаем украшения для тех, кто не боится быть собой и умеет действовать решительно.</div>
+              <a href="#" class="instashop__link">Подробнее</a>
+            </div>
+          </div>
+          <div class="instashop__item">
+            <div class="instashop__image">
+              <img data-src="data/instashop-img-3.webp" width="430" height="430" alt="" class="lazyload">
+            </div>
+            <div class="instashop__box">
+              <div class="instashop__title">Empire Hall collections 2019</div>
+              <div class="instashop__text">Мы создаем украшения для тех, кто не боится быть собой и умеет действовать решительно.</div>
+              <a href="#" class="instashop__link">Подробнее</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="main-content">
+        <div class="main-content__inner">
+          <div class="main-content__decore">
+            <img data-src="data/content-decore-img.svg" width="" height="" alt="" class="lazyload">
+          </div>
+          <div class="main-content__content">
+            <div class="main-content__title">Empire hall</div>
+            <div class="main-content__subtitle">vivere in delicis</div>
+            <div class="main-content__text text scroll-text">
+              <p>Пятьдесят лет спустя Зеев все еще взволнован своей витриной. На этот раз, однако, это в гораздо большем масштабе. Магазин ARAM, расположенный в самом сердце Ковент-Гарден, в настоящее время является главным местом назначения мебели и дизайна изделий в столице. «Я хочу предоставить как можно более широкий ассортимент людям, желающим получить высококачественный дизайн и производство, а также отличный сервис». Теперь, когда британцы, наконец, приняли современный дизайн, Зеев намеревается дать им его во всех размерах, формах и цветах, от его любимой лампы Castiglioni Toio до совершенно нового прототипа от неизвестного дизайнера, только что из </p>
+              <p>Пятьдесят лет спустя Зеев все еще взволнован своей витриной. На этот раз, однако, это в гораздо большем масштабе. Магазин ARAM, расположенный в самом сердце Ковент-Гарден, в настоящее время является главным местом назначения мебели и дизайна изделий в столице. «Я хочу предоставить как можно более широкий ассортимент людям, желающим получить высококачественный дизайн и производство, а также отличный сервис». Теперь, когда британцы, наконец, приняли современный дизайн, Зеев намеревается дать им его во всех размерах, формах и цветах, от его любимой лампы Castiglioni Toio до совершенно нового прототипа от неизвестного дизайнера, только что из </p>
+            </div>
+            <a href="#" class="show-all">Подробнее</a>
+          </div>
+          <div class="main-content__image">
+            <img data-src="data/main-content-img-1.webp" width="" height="" alt="" class="lazyload">
+            <svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="images/sprite.svg#content-img-bg"></use></svg>
+          </div>
+        </div>
+      </div>
+      {% include 'footer.html' %}
+      
+      <div class="modal-banner" data-time="300000"><!-- Задержка в секундах до появления блока ( должно указываться в админке) -->
+        <div class="banner-content">
+          <div class="banner-content__image" style="background-image:url(data/image.webp)">
+            <div class="close-banner">
+              <svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="images/sprite.svg#close"></use></svg>
+            </div>
+            <div class="banner-content__holder">
+              
+              <div class="title">Empire Hall collections 2019</div>
+              <div class="text">Мы создаем украшения для тех, кто не боится быть собой и умеет действовать решительно.</div>
+              <a href="#" class="main-button">В каталог</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    {% include 'js.html' %}
+  </body>
+</html>

@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+{% include 'head.html' %}
+  <body>
+    <div class="wrapper">
+    {% include 'header.html' %}
+      
+    <div class="head-block">
+      <ol class="breadcrumb" itemscope itemtype="http://schema.org/BreadcrumbList">
+        <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+          <a itemprop="item" href="https://example.com/dresses"><span itemprop="name">Главная</span></a>
+          <meta itemprop="position" content="1" />
+        </li>
+        <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+          <span itemprop="name">Личный кабинет</span>
+          <meta itemprop="position" content="2" />
+        </li>
+      </ol>
+      <div class="head-title">Личный кабинет</div>
+    </div>
+
+    <div class="area">
+      <div class="area__sidebar">
+        <div class="area__box">
+          <div class="area__userinfo">
+            <div class="area__userinfo-avatar">
+              <img src="images/no-avatar.svg" width="29" height="29" alt="">
+            </div>
+            <div class="area__userinfo-name">Дмитрий Макогон</div>
+          </div>
+        </div>
+        <nav class="area__nav">
+          <ul class="area__nav-list">
+            <li class="area__nav-item active">
+              <a href="#">Мои данные</a>
+            </li>
+            <li class="area__nav-item">
+              <a href="#">Мои заказы</a>
+            </li>
+            <li class="area__nav-item">
+              <a href="#">Избранное</a>
+            </li>
+            <li class="area__nav-item">
+              <a href="#">Смена пароля</a>
+            </li>
+            <li class="area__nav-item">
+              <a href="#">PDF Каталог</a>
+            </li>
+            <li class="area__nav-item">
+              <a href="#">выход</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div class="area__main">
+
+        <div class="discount-item">
+          <svg width="11" height="16" viewBox="0 0 11 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g clip-path="url(#clip123)">
+            <path d="M0 0H11V16.2623L5.5 12.3279L0 16.2623V0Z" fill="url(#paint022)"/>
+            </g>
+            <defs>
+            <linearGradient id="paint022" x1="10.7925" y1="8.77461" x2="0.276417" y2="8.76893" gradientUnits="userSpaceOnUse">
+            <stop stop-color="#8F6D55"/>
+            <stop offset="1" stop-color="#4D4444"/>
+            </linearGradient>
+            <clipPath id="clip123">
+            <rect width="11" height="16" transform="matrix(-1 0 0 1 11 0)" fill="white"/>
+            </clipPath>
+            </defs>
+          </svg>
+          <div class="discount-item__title">У вас <span>3% скидка.</span> До следующей скидки осталось <span>100 000 грн.</span> </div>
+          <div class="discount-item__text">Подробнее о программе лояльности <a href="#">читайте здесь.</a></div>
+        </div>
+
+        <div class="area__top">
+          <div class="area__title">Мои данные</div>
+        </div>
+
+        <form class="area__form" action="#">
+          <div class="area__form-inner">
+            <div class="form-block__col">
+              <div class="form-block">
+                <input class="main-input" type="text" name="first_name">
+                <div class="form-label">Имя</div>
+              </div>
+              <div class="form-block">
+                <input class="main-input" type="text" name="last_name">
+                <div class="form-label">Фамилия</div>
+              </div>
+              <div class="form-block">
+                <input class="main-input" type="date"  name="date">
+                <div class="form-label">День рождения</div>
+              </div>
+              <div class="form-block">
+                <input class="main-input" type="text" name="street">
+                <div class="form-label">Улица</div>
+              </div>
+            </div>
+            <div class="form-block__col">
+              <div class="form-block">
+                <input class="main-input" type="tel" name="phone">
+                <div class="form-label">Телефон</div>
+              </div>
+              <div class="form-block">
+                <input class="main-input" type="email" name="email">
+                <div class="form-label">Email</div>
+              </div>
+              <div class="form-block">
+                <select name="city-region">
+                  <option selected disabled value="">-- Выберите город --</option>
+                  <option value="">Харьков</option>
+                  <option value="">Киев</option>
+                </select>
+              </div>
+              <div class="form-block__row">
+                <div class="form-block">
+                  <input class="main-input" type="text" name="house">
+                  <div class="form-label">Дом</div>
+                </div>
+                <div class="form-block">
+                  <input class="main-input" type="text" name="flat">
+                  <div class="form-label">Квартира</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button class="main-button" type="submit">Сохранить</button>
+        </form>
+
+      </div>
+    </div>
+
+    {% include 'footer.html' %}
+  </div>
+  {% include 'js.html' %}
+</body>
+</html>

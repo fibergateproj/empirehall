@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+{% include 'head.html' %}
+  <body class="error-page">
+    <div class="wrapper">
+    {% include 'header.html' %}
+
+    <div class="page-error">
+      <div class="page-error__image">
+        <img data-src="data/error-image.webp" width="1016" height="510" alt="" class="lazyload">
+      </div>
+      <div class="page-error__title">Страница не найдена</div>
+      <div class="page-error__text">Вы перешли на несуществующую ссылку. Попробуйте с главной страницы.</div>
+      <a class="main-button" href="#">На главную</a>
+    </div>
+
+    {% include 'footer.html' %}
+  </div>
+  {% include 'js.html' %}
+</body>
+</html>

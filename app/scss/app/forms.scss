@@ -1,0 +1,42 @@
+.form-box {
+  max-width: 500px;
+  width: 100%;
+  margin: 0 auto 195px;
+  @include response(767px) {
+    padding: 0 15px;
+    margin: 0 auto 90px;
+  }
+  .main-button {
+    max-width: 100%;
+  }
+  .show-all {
+    margin-top: 22px;
+  }
+}
+
+.forgot-password {
+  font-family: $font;
+  font-size: 13px;
+  line-height: 17px;
+  display: table;
+  border-bottom: 1px dashed #4D4444;
+  margin-bottom: 42px;
+  color: #4D4444;
+  text-decoration: none;
+  transition: .3s ease-in-out;
+  @include hover() {
+    color: #000;
+    border-color: #000;
+  }
+}
+
+.password-text {
+  max-width: 592px;
+  width: 100%;
+  margin: 0 auto 60px;
+  font-family: $font;
+  font-size: 16px;
+  line-height: 26px;
+  text-align: center;
+  color: #000;
+}
