@@ -5,7 +5,7 @@ import options from '../../options';
 gulp.task('default', () => {
   runSequence(
     [
-      'png-sprite',
+      // 'png-sprite',
       'svg-sprite',
       'fonts',
       `${options.templateEngine}`,

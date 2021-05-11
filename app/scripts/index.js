@@ -68,21 +68,27 @@ document.addEventListener("DOMContentLoaded", () => {
 }, {passive: true});
 
 $(window).on('load', () => {
-  if($('#preloader').length){
-    setTimeout(() => {
+  // if($('#preloader').length){
+    // setTimeout(() => {
       $('#preloader').addClass('hide');
-    }, 500);
-  }
-  
+    // }, 10);
+  // }
+
   if($('body').hasClass('main-page main')){
     var time = $('.modal-banner').data('time') * 1000;
     setTimeout(() => {
       $('.modal-banner').fadeIn();
     }, time);
   }
+  document.addEventListener('lazybeforeunveil', function(e){
+    var bg = e.target.getAttribute('data-bg');
+    if(bg){
+      e.target.style.backgroundImage = 'url(' + bg + ')';
+    }
+  });
 });
 $(document).on('click', '.modal-banner', function(event){
-  var target = $(event.target);
+  let target = $(event.target);
   
   if(!target.closest('.banner-content__image').length || target.closest('.close-banner').length ){
     $(this).fadeOut();

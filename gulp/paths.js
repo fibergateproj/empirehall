@@ -3,7 +3,7 @@ export default {
   baseDist: './dist',
   src: {
     styles: './app/scss',
-    pngsprite: './app/png-sprite',
+    // pngsprite: './app/png-sprite',
     svgsprite: './app/svg-sprite',
     images: './app/images',
     svg: './app/svg',
