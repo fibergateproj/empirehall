@@ -198,9 +198,11 @@
     }
     &.prev-arrow {
       left: 100px;
+      animation: pulse-prev 1.5s infinite;
     }
     &.next-arrow {
       right: 100px;
+      animation: pulse-next 1.5s infinite;
     }
 
     @include hover() {
@@ -216,6 +218,23 @@
         left: 50px;
       }
     }
+  }
+}
+
+@keyframes pulse-prev {
+  0%, 100% {
+    transform: translateX(0%);
+  }
+  50% {
+    transform: translateX(-50%);
+  }
+}
+@keyframes pulse-next {
+  0%, 100% {
+    transform: translateX(0%);
+  }
+  50% {
+    transform: translateX(50%);
   }
 }
 @each $size, $folder in $sizedImagesFolder{
