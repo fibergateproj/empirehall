@@ -165,6 +165,8 @@
         stroke-dasharray: 327;
         stroke-dashoffset: 327;
         transition: stroke-dashoffset 0.6s linear;
+        background-color: rgba(#fff, .3);
+        border-radius: 50%;
       }
       @include hover() {
         svg {
