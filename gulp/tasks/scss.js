@@ -40,7 +40,13 @@ gulp.task('scss', () => {
       ignore: ignoreSettings,
       html: [`${paths.baseDist}/*.html`]
     })))
+    .pipe(gulpif(options.env !== 'dev', cleanCSS({
+      level: {
+        2: {
+          mergeMedia: true,
+        }
+      }
+    })))
     .pipe(gulpif(options.env === 'dev', sourcemaps.write('.')))
-    .pipe(gulpif(options.env !== 'dev', cleanCSS()))
     .pipe(gulp.dest(paths.dist.styles))
 });

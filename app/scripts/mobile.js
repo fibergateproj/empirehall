@@ -15,7 +15,7 @@ import main from './components/main';
 import sliders from './components/sliders';
 // import map from './components/map';
 import quantiy from './components/quantity';
-import animation from './components/animation';
+// import animation from './components/animation';
 
 import 'lazysizes';
 import '@justinribeiro/lite-youtube';
@@ -31,7 +31,7 @@ document.addEventListener("DOMContentLoaded", () => {
   main();
   sliders();
   quantiy();
-  animation();
+  // animation();
   const malihuObj = {
     axis:"y",
     scrollInertia: 0,
