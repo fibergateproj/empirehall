@@ -23,27 +23,26 @@ const uglifyJS = new UglifyJsPlugin({
 });
 
 export default {
-  entry: [
-    'element.prototype.matches',
-    'element-closest',
-    'nodelist-foreach-polyfill',
-    `${paths.src.scripts}/index.js`
-  ],
+  entry: {
+    app: `${paths.src.scripts}/index.js`,
+    map: `${paths.src.scripts}/map-index.js`,
+    mobile: `${paths.src.scripts}/mobile.js`,
+  },
   output: {
-    path: `${__dirname}/dist/js/`,
-    filename: 'app.js'
+    path: `${__dirname}/dist/js`,
+    filename: '[name].js'
   },
   devtool: 'cheap-module-source-map',
   resolve: {
     modules: ['node_modules'],
     extensions: ['.web.js', '.mjs', '.js', '.json', '.web.jsx', '.jsx'],
     alias: {
-      // "TweenLite": path.resolve('node_modules', 'gsap/src/uncompressed/TweenLite.js'),
-      // "TweenMax": path.resolve('node_modules', 'gsap/src/uncompressed/TweenMax.js'),
-      // "TimelineLite": path.resolve('node_modules', 'gsap/src/uncompressed/TimelineLite.js'),
-      // "TimelineMax": path.resolve('node_modules', 'gsap/src/uncompressed/TimelineMax.js'),
-      // "ScrollMagic": path.resolve('node_modules', 'scrollmagic/scrollmagic/uncompressed/ScrollMagic.js'),
-      // "animation.gsap": path.resolve('node_modules', 'scrollmagic/scrollmagic/uncompressed/plugins/animation.gsap.js'),
+      "TweenLite": path.resolve('node_modules', 'gsap/src/uncompressed/TweenLite.js'),
+      "TweenMax": path.resolve('node_modules', 'gsap/src/uncompressed/TweenMax.js'),
+      "TimelineLite": path.resolve('node_modules', 'gsap/src/uncompressed/TimelineLite.js'),
+      "TimelineMax": path.resolve('node_modules', 'gsap/src/uncompressed/TimelineMax.js'),
+      "ScrollMagic": path.resolve('node_modules', 'scrollmagic/scrollmagic/uncompressed/ScrollMagic.js'),
+      "animation.gsap": path.resolve('node_modules', 'scrollmagic/scrollmagic/uncompressed/plugins/animation.gsap.js'),
       // "debug.addIndicators": path.resolve('node_modules', 'scrollmagic/scrollmagic/uncompressed/plugins/debug.addIndicators.js')
     }
   },
