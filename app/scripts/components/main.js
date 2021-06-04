@@ -223,23 +223,23 @@ export default () => {
     }
   });
 
-  $('.no-login > a').on('click', (e) => {
+  $('#no-login-link').on('click', (e) => {
     e.preventDefault();
-    $('.login-popup').toggleClass('open');
+    $('#login-popup').toggleClass('open');
   });
   $('.add-wishlist.no-login').on('click', (e) => {
     e.preventDefault();
-    $('.login-popup').addClass('open');
+    $('#login-popup').addClass('open');
   });
 
   $('#open-login').on('click', (e) => {
     e.preventDefault();
-    $('.login-popup').toggleClass('open');
+    $('#login-popup').toggleClass('open');
   });
 
   $(document).on('click touchstart', (e) => {
     if (!$(e.target).closest('.no-login > a, .login-popup, #open-login, .add-wishlist.no-login').length) {
-      $('.login-popup').removeClass('open');
+      $('#login-popup').removeClass('open');
     }
     e.stopPropagation();
   });

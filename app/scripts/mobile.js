@@ -6,7 +6,7 @@ import $ from 'jquery';
 import 'malihu-custom-scrollbar-plugin';
 import 'jquery-mousewheel';
 import '@fancyapps/fancybox';
-import svgUseIt from 'svg-use-it';
+// import svgUseIt from 'svg-use-it';
 
 import Tabs from './components/tabs';
 import Select from './components/select';
@@ -26,7 +26,7 @@ global.$ = $;
 global.jQuery = $;
 
 document.addEventListener("DOMContentLoaded", () => {
-  svgUseIt();
+  // svgUseIt();
   popups();
   main();
   sliders();
