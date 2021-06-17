@@ -139,7 +139,7 @@
       margin: 0 auto 35px;
     }
     h1,h2,h3,h4,h5{
-      font-family: "Raleway", sans-serif;
+      font-family: "Alice", sans-serif;
       font-size: 22px;
       line-height: 36px;
       color: #000;
@@ -153,7 +153,7 @@
       @extend %list;
       li {
         position: relative;
-        font-family: "Raleway", sans-serif;
+        font-family: "Alice", sans-serif;
         font-weight: 400;
         font-size: 16px;
         line-height: 26px;
@@ -238,7 +238,7 @@
     margin-bottom: 40px;
   }
   &__quantity-title {
-    font-family: "Raleway", sans-serif;
+    font-family: "Alice", sans-serif;
     font-weight: 300;
     font-size: 14px;
     letter-spacing: 0.04em;
