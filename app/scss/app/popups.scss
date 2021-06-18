@@ -21,7 +21,7 @@
   &__holder {
     background: #fff;
     padding: 100px 90px 98px;
-    position: absolute;    
+    position: absolute;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
@@ -42,7 +42,7 @@
         height: 500px;
       }
       @include response(1023px) {
-        max-width: 690px
+        max-width: 690px;
       }
       @include response(767px) {
         height: auto;
@@ -122,14 +122,12 @@
     }
   }
 }
-
 .iosBugFixCaret {
   position: fixed;
   width: 100%;
   height: 100%;
   overflow: hidden;
 }
-
 .success-popup {
   &__image {
     text-align: center;
@@ -165,8 +163,40 @@
       font-size: 12px;
     }
   }
+  &__buttons {
+    max-width: 500px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+  }
 }
-
+.success-popup-next {
+  &__title {
+    font-size: 32px;
+    line-height: 40px;
+    margin-bottom: 0;
+    @include response(767px) {
+      font-size: 24px;
+      line-height: 30px;
+      margin-bottom: 0;
+    }
+  }
+  &__text {
+    font-size: 24px;
+    line-height: 27px;
+    @include response(767px) {
+      font-size: 16px;
+      line-height: 20px;
+    }
+  }
+  &__image{
+    margin-bottom: 0;
+    @include response(767px) {
+      margin-bottom: 0;
+    }
+  }
+}
 .submit-button {
   position: relative;
   max-width: 100%;
@@ -186,12 +216,12 @@
   line-height: 19px;
   cursor: pointer;
   transition: .3s ease-in-out;
-  &:before {
-    content: '';  
+  &::before {
+    content: '';
     background-image: linear-gradient(89.95deg, #4d4444 1.92%, #8f6d55 97.45%);
     height: 100%;
     position: absolute;
-    top: 0; 
+    top: 0;
     left: 0;
     opacity: 0;
     width: 100%;
@@ -201,12 +231,51 @@
   @include hover() {
     color: rgba(255, 255, 255, 0.6);
     transition: .3s ease-in-out;
-    &:before {
+    &::before {
       opacity: 1;
     }
   }
 }
+.submit-button-link {
+  background: transparent;
+  color: #4f4f4f;
+  text-decoration: none;
+  align-self: center;
+  display: flex;
+  align-items: center;
 
+  svg {
+    transform: rotate(180deg);
+    width: 10px;
+    height: 16px;
+    margin-right: 5px;
+  }
+}
+.popup-add-basket {
+  .success-popup {
+    &__title {
+      max-width: 500px;
+      font-size: 24px;
+      line-height: 30px;
+      margin-bottom: 0;
+      color: #4f4f4f;
+      border-bottom: 1px solid #4f4f4f;
+      @include response(767px) {
+        font-size: 24px;
+        line-height: 30px;
+        margin-bottom: 0;
+      }
+    }
+    &__text {
+      font-size: 18px;
+      font-weight: 200;
+      color: #4f4f4f;
+    }
+    &__image{
+      margin: 0 auto;
+    }
+  }
+}
 .about-popup {
   background-repeat: no-repeat;
   background-size: cover;
@@ -225,7 +294,7 @@
     top: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(180deg, #0D0E10 0%, rgba(13, 14, 16, 0.8) 98.78%);
+    background: linear-gradient(180deg, #0d0e10 0%, rgba(13, 14, 16, 0.8) 98.78%);
     opacity: 0.6;
     z-index: -1;
   }
@@ -253,7 +322,6 @@
     line-height: 60px;
     letter-spacing: 0.2em;
     text-transform: uppercase;
-    color: #fff;
     margin-bottom: 15px;
     @include response(1023px) {
       font-size: 38px;
@@ -280,7 +348,6 @@
     }
   }
 }
-
 .login-popup {
   width: 420px;
   position: absolute;
@@ -289,7 +356,7 @@
   background: #fff;
   padding: 40px 30px;
   margin-top: 42px;
-  box-shadow: 0px 4px 40px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 4px 40px rgba(0, 0, 0, 0.08);
   visibility: hidden;
   opacity: 0;
   overflow: hidden;
@@ -312,7 +379,7 @@
     visibility: visible;
     opacity: 1;
     overflow: visible;
-    transform: translateY(0)
+    transform: translateY(0);
   }
   &__title {
     font-size: 20px;
@@ -339,11 +406,10 @@
     margin-bottom: 28px;
     @include hover() {
       color: #000 !important;
-      border-color: #000 !important
+      border-color: #000 !important;
     }
   }
 }
-
 .basket-popup {
   position: fixed;
   right: 0;
@@ -364,13 +430,13 @@
     transform: translateX(0);
   }
   .mCSB_dragger_bar{
-    background-color: #9e9e9e!important;
-    border-radius: 0px!important;
-    width: 3px!important;
+    background-color: #9e9e9e !important;
+    border-radius: 0 !important;
+    width: 3px !important;
   }
   .mCSB_draggerRail{
-    background-color: rgba(82, 82, 82, 0.2)!important;
-    width: 1px!important;
+    background-color: rgba(82, 82, 82, 0.2) !important;
+    width: 1px !important;
   }
   &__close {
     position: absolute;
@@ -394,7 +460,7 @@
   &__top {
     font-family: $font;
     font-size: 25px;
-    color: #4F4F4F;
+    color: #4f4f4f;
     padding: 38px 65px;
     border-bottom: 1px solid rgba(0, 0, 0, 0.1);
     display: flex;
@@ -479,7 +545,7 @@
     padding: 20px 0 0;
     margin-top: auto;
     @include response(767px) {
-      padding: 15px 0 0px;
+      padding: 15px 0 0;
     }
     .main-button {
       margin: 0;
@@ -505,7 +571,7 @@
   &__total-text {
     font-family: $font;
     font-size: 13px;
-    color: #3E4C4C;
+    color: #3e4c4c;
     margin-right: 16px;
   }
   &__total-price {
@@ -536,26 +602,25 @@
     }
   }
 }
-
 .modal-banner{
   position: fixed;
-  display:none;
+  display: none;
   left: 0;
   top: 0;
   width: 100%;
   height: 100%;
   min-width: 320px;
-  padding:0 15px 0 15px;
+  padding: 0 15px;
   background: rgba(0, 0, 0, 0.6);
   z-index: 1000;
-  .close-banner{
+  .close-banner {
     position: absolute;
     right: 0;
-    top:0;
+    top: 0;
     width: 40px;
     height: 40px;
     background: #fff;
-    display:flex;
+    display: flex;
     align-items: center;
     z-index: 2;
     cursor: pointer;
@@ -565,49 +630,49 @@
       height: 12px;
     }
   }
-  .banner-content{
+  .banner-content {
     width: 100%;
     height: 100%;
-    overflow:hidden;
-    margin: 0 auto 0;
-    display:flex;
+    overflow: hidden;
+    margin: 0 auto;
+    display: flex;
     justify-content: center;
     align-items: center;
     &__image{
-      background:50% 50% / cover no-repeat;
+      background: 50% 50% / cover no-repeat;
       max-width: 1200px;
-      height:740px;
+      height: 740px;
       width: 100%;
-      position:relative;
-      display:flex;
+      position: relative;
+      display: flex;
       align-items: center;
       justify-content: center;
       text-align: center;
-      align-content:center;
-      border:4px solid #fff;
-      padding:15px;
-      &:before{
-        content:'';
-        display:block;
+      align-content: center;
+      border: 4px solid #fff;
+      padding: 15px;
+      &::before{
+        content: '';
+        display: block;
         width: 100%;
         height: 100%;
-        background: linear-gradient(180deg, #0D0E10 0%, rgba(13, 14, 16, 0.8) 98.78%);
+        background: linear-gradient(180deg, #0d0e10 0%, rgba(13, 14, 16, 0.8) 98.78%);
         opacity: 0.6;
-        position:absolute;
-        left:0;
-        top:0;
+        position: absolute;
+        left: 0;
+        top: 0;
       }
-      &:after{
-        content:'';
-        display:block;
+      &::after{
+        content: '';
+        display: block;
         width: calc(100% - 40px);
-        height:calc(100% - 40px);
+        height: calc(100% - 40px);
         border: 1px solid #fff;
         opacity: 0.3;
-        position:absolute;
-        left:50%;
-        top:50%;
-        transform:translate(-50%,-50%);
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%,-50%);
       }
     }
     &__holder{
@@ -621,8 +686,8 @@
     line-height: 60px;
     letter-spacing: 0.2em;
     text-transform: uppercase;
-    margin:0 auto 14px;
-    color: #FFFFFF;
+    margin: 0 auto 14px;
+    color: #fff;
     max-width: 590px;
   }
   .text{
@@ -630,19 +695,19 @@
     font-weight: 400;
     font-size: 16px;
     line-height: 26px;
-    color: #FFFFFF;
-    margin:0 auto 33px;
+    color: #fff;
+    margin: 0 auto 33px;
     max-width: 440px;
   }
-  @media screen and (min-width:1250px) and ( max-height: 770px ){
+  @media screen and (min-width: 1250px) and (max-height: 770px){
     .banner-content__image{
       height: 100%;
       max-width: 150vh;
     }
   }
   @include response(767px){
-    padding: 0 0px;
-    .banner-content__image{ 
+    padding: 0;
+    .banner-content__image {
       height: 100vw;
       .title{
         font-size: 20px;
@@ -656,11 +721,8 @@
       }
     }
   }
-  @media only screen and (min-device-width: 480px) 
-                   and (max-device-height: 480px) 
-                   and (orientation: landscape) {
-
-    .banner-content__image{ 
+  @media only screen and (min-device-width: 480px) and (max-device-height: 480px) and (orientation: landscape) {
+    .banner-content__image {
       height: 45vw;
       width: 130vh;
       .title{
@@ -673,6 +735,6 @@
         font-size: 13px;
         line-height: 22px;
       }
-    } 
+    }
   }
 }
