@@ -140,7 +140,7 @@
     @extend %flex-c;
     width: 130px;
     height: 130px;
-    border: 1px solid rgba(255, 255, 255, 0.3);
+    border: 1px solid transparent;
     border-radius: 50%;
     line-height: 19px;
     font-family: $font;
