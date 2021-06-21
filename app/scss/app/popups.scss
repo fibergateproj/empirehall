@@ -803,10 +803,28 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  width: 100%;
   svg {
     transform: rotate(90deg);
+  }
+  .popup-open {
+    padding: 7px 25px;
+    width: auto;
+    margin: unset;
   }
 }
 .text-decor-none {
   text-decoration: none;
+}
+.link-button {
+  text-transform: uppercase;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #8b6d55;
+  color: #8b6d55;
+  svg {
+    margin-left: 10px;
+    transform: rotate(0);
+  }
 }
