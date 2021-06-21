@@ -139,7 +139,6 @@ body.custome-page {
     z-index: 8;
   }
 }
-
 .main-subtitle {
   display: table;
   position: relative;
@@ -149,7 +148,7 @@ body.custome-page {
   text-transform: uppercase;
   padding-left: 70px;
   margin-bottom: 16px;
-  color: #4D4444;
+  color: #4d4444;
   @supports (-webkit-background-clip: text) and (-webkit-text-fill-color: transparent) {
     background: $gold;
     -webkit-background-clip: text;
@@ -174,7 +173,6 @@ body.custome-page {
     }
   }
 }
-
 .show-all {
   position: relative;
   display: table;
@@ -197,13 +195,12 @@ body.custome-page {
     transition: .3s ease-in-out;
   }
   @include hover() {
-    color: #4D4444;
+    color: #4d4444;
     &::before {
       background: $main;
     }
   }
 }
-
 .text {
   font-family: $font;
   line-height: 26px;
@@ -227,12 +224,10 @@ body.custome-page {
     @include marginY();
   }
 }
-
 .form-block {
   width: 100%;
   position: relative;
 }
-
 .head-block {
   max-width: 1400px;
   width: 100%;
@@ -252,7 +247,6 @@ body.custome-page {
     margin: 60px auto 35px;
   }
 }
-
 .head-title {
   line-height: 60px;
   font-size: 48px;
@@ -268,7 +262,6 @@ body.custome-page {
     letter-spacing: 0.15em;
   }
 }
-
 .breadcrumb {
   margin: 0 auto 25px;
   padding: 0;
@@ -351,12 +344,11 @@ body.custome-page {
       color:#000;
       transition: color .3s;
       @include hover() {
-       color: #000!important;
+        color: #000!important;
       }
     }
   }
 }
-
 .pagination {
   display: flex;
   flex-direction: row;
@@ -567,11 +559,9 @@ body.custome-page {
     }
   }
 }
-
 .slick-dots {
   left: 0;
 }
-
 .main-button {
   position: relative;
   max-width: 280px;
@@ -592,11 +582,11 @@ body.custome-page {
   border: none;
   transition: .3s ease-in-out;
   &:before {
-    content: '';  
+    content: '';
     background-image: linear-gradient(89.95deg, #4d4444 1.92%, #8f6d55 97.45%);
     height: 100%;
     position: absolute;
-    top: 0; 
+    top: 0;
     left: 0;
     opacity: 0;
     width: 100%;
@@ -606,12 +596,19 @@ body.custome-page {
   @include hover() {
     color: rgba(255, 255, 255, 0.6);
     transition: .3s ease-in-out;
-    &:before {
+    &::before {
       opacity: 1;
     }
   }
+  &.btn-outlined {
+    background: transparent;
+    border: 1px solid #4d4444;
+    color: #8b6d55;
+    &:hover{
+      color: #fff;
+    }
+  }
 }
-
 .form-block {
   position: relative;
   width: 100%;
@@ -657,7 +654,6 @@ body.custome-page {
     }
   }
 }
-
 .main-input {
   width: 100%;
   height: 60px;
@@ -694,11 +690,10 @@ body.custome-page {
 }
 input[type=date] {
   &::-webkit-inner-spin-button {
-      display: none;
-      -webkit-appearance: none;
+    display: none;
+    -webkit-appearance: none;
   }
 }
-
 input[type="date"]:before {
   color: lightgrey;
   content: attr(placeholder) !important;

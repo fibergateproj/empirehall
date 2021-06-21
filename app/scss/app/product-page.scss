@@ -240,11 +240,26 @@
     align-items: center;
     margin-bottom: 20px;
     position: relative;
+    flex-wrap: wrap;
     .main-button {
       margin: 0;
       max-width: 460px;
       width: calc(100% - 64px);
       margin-right: 8px;
+      &.btn-first {
+        margin: 5px 5px 5px 0;
+        width: calc((100% - 76px) / 2);
+      }
+      &.btn-second {
+        width: calc((100% - 76px) / 2);
+        margin: 5px;
+      }
+      &.full-width {
+        flex: 1 0 100%;
+        max-width: unset;
+        order: 1000;
+        margin: 5px 0;
+      }
     }
     .basket-popup__alert {
       position: absolute;
@@ -257,7 +272,7 @@
       display: none;
       box-shadow: 0 5px 25px 0 rgba(0, 0, 0, 0.07);
     }
-    .main-button{
+    .main-button:not(.btn-outlined){
       @media screen and (min-width: 1250px) {
         &:hover {
           &~.basket-popup__alert {
@@ -291,11 +306,12 @@
   @extend %flex-c;
   border: 1px solid #dedede;
   cursor: pointer;
+  margin-left: 5px;
   svg {
     width: 18px;
     height: 16px;
-    fill: #c4c4c4;
-    transition:fill .3s;
+    fill: #8f6d55;
+    transition: fill .3s;
   }
   &.active {
     border-color:#8f6d55;
@@ -303,7 +319,7 @@
     svg {
       fill: #fff;
     }
-    border-color:#8f6d55;
+    border-color: #8f6d55;
   }
   @include response-min(1025px) {
     &:hover:not(.active){
@@ -313,7 +329,6 @@
     }
   }
 }
-
 .info-box {
   border-top: 1px solid #e0e0e0;
   &__item {
@@ -372,17 +387,17 @@
         letter-spacing: 0.04em;
         color: rgba(82, 82, 82, .8);
         margin-bottom: 14px;
-        padding-left: 20px;
+        //padding-left: 20px;
         text-transform: lowercase;
         &::before {
-          content: '';
-          position: absolute;
-          left: 0;
-          top: 5px;
-          width: 6px;
-          height: 6px;
-          border-radius: 50%;
-          border: 1px solid #c4c4c4;
+          //content: '';
+          //position: absolute;
+          //left: 0;
+          //top: 5px;
+          //width: 6px;
+          //height: 6px;
+          //border-radius: 50%;
+          //border: 1px solid #c4c4c4;
         }
         &:last-of-type {
           margin-bottom: 0;
