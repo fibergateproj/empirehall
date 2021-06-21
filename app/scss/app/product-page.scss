@@ -5,6 +5,15 @@
   display: flex;
   flex-direction: row;
   align-items: flex-start;
+  &__starts {
+    display: flex;
+    align-items: center;
+    margin: -20px 0 20px;
+    padding: 0;
+  }
+  &__star {
+    display: block;
+  }
   &__price {
     position: relative;
     .basket-popup__alert {
