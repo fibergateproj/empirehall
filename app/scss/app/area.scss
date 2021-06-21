@@ -213,6 +213,13 @@
         width: 10px;
         height: 10px;
       }
+      &__basket {
+        svg {
+          width: 30px;
+          height: 30px;
+          fill: #8f6d55;
+        }
+      }
     }
     .product__price-new {
       font-size: 18px;
