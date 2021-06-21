@@ -132,6 +132,9 @@
   &__image {
     text-align: center;
     margin: 0 auto 45px;
+    &:last-child {
+      margin-bottom: 0 !important;
+    }
     @include response(767px) {
       margin: 0 auto 25px;
     }
@@ -151,12 +154,23 @@
       font-size: 16px;
       margin-bottom: 16px;
     }
+    display: flex;
+    align-items: center;
+    .span-mb-4 {
+      display: block;
+      margin-bottom: 10px;
+      margin-left: 5px;
+    }
+    svg {
+      align-self: center;
+      margin-bottom: 10px;
+    }
   }
   &__text {
     font-family: $font;
     font-size: 16px;
     font-weight: 300;
-    line-height: 26px;
+    line-height: 20px;
     text-align: center;
     color: #000;
     @include response(767px) {
@@ -206,6 +220,7 @@
   border: none;
   background-image: linear-gradient(89.95deg, #8f6d55 1.92%, #4d4444 97.45%);
   background-size: 100%;
+  text-transform: uppercase;
   z-index: 2;
   @extend %flex-c;
   color: #fff;
@@ -737,4 +752,61 @@
       }
     }
   }
+}
+.text-left {
+  text-align: left;
+}
+.popup-callback-2,
+.popup-callback-2-1 {
+  .form-block {
+    &::before {
+      content: none;
+    }
+  }
+}
+.color-brown {
+  color: #8b6d55 !important;
+}
+.color-grey {
+  color: rgba(0, 0, 0, 0.6) !important;
+}
+.mw-50 {
+  max-width: 50% !important;
+}
+.mw-75 {
+  max-width: 75% !important;
+}
+.m-auto {
+  margin: 0 auto !important;
+}
+.mb-20 {
+  margin-bottom: 20px !important;
+}
+.mb-0 {
+  margin-bottom: 0 !important;
+}
+.mb-10 {
+  margin-bottom: 10px !important;
+}
+.sans {
+  font-family: 'Open Sans', sans-serif !important;
+}
+.flex-col {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.text-upper {
+  text-transform: uppercase !important;
+}
+.buttons {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  svg {
+    transform: rotate(90deg);
+  }
+}
+.text-decor-none {
+  text-decoration: none;
 }

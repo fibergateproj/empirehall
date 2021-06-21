@@ -527,7 +527,7 @@
         </div>
 
         <div class="product-page__buttons">
-          <a class="main-button btn-outlined btn-first" href="#">Хочу в подарок</a>
+          <a class="main-button btn-outlined btn-first popup-open" href="#" data-for="popup-callback-2">Хочу в подарок</a>
           <a class="main-button btn-outlined btn-second" href="#">В корзину</a>
           <a class="main-button full-width" href="#">Быстрый заказ</a>
           <div class="add-wishlist no-login">
@@ -875,21 +875,73 @@
       <svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="images/sprite.svg#close"></use></svg>
     </div>
     <div class="popup__content">
-      <div class="popup__title">Кому отправить намек? ;)</div>
+      <div class="popup__title color-brown mb-20 sans">Кому отправить намек?</div>
+      <div class="success-popup__text color-grey sans">Хотите такой подарок?</div>
+      <div class="success-popup__text color-grey sans">Мы отправим ссылку на желаемый товар тому, от кого бы Вы хотели его получить.</div>
+      <div class="success-popup__image mb-20">
+        <img src="data/logo.svg" data-src="images/present.svg" width="200" height="250" alt="" class="lazyload">
+      </div>
+      <div class="success-popup__text text-left color-grey mb-10 sans">Данные дарителя</div>
       <form class="popup__form" action="#">
         <div class="form-block">
-          <input class="main-input error" type="text" name="name">
-          <div class="form-label">Имя</div>
+          <input class="main-input" type="text" name="name">
+          <div class="form-label">*Имя</div>
         </div>
         <div class="form-block">
           <input class="main-input" type="email" name="email">
-          <div class="form-label">e-mail</div>
+          <div class="form-label">*Е-mail</div>
         </div>
-        <button class="submit-button" type="submit">Отправить</button>
+        <div class="form-block">
+          <input class="main-input" type="text" name="phone">
+          <div class="form-label">*Телефон</div>
+        </div>
+        <button class="submit-button m-auto mw-50 sans" type="submit">Отправить</button>
       </form>
     </div>
   </div>
 </div>
+<div class="popup popup-callback-2-1">
+  <div class="popup__overlay"></div>
+  <div class="popup__holder">
+    <div class="popup__close">
+      <svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="images/sprite.svg#close"></use></svg>
+    </div>
+    <div class="popup__content">
+      <div class="popup__title color-brown mb-0 sans">Поздравляем, </div>
+      <div class="popup__title color-brown mb-20 sans">ВАШ ВИШ-ЛИСТ СОСТАВЛЕН!</div>
+      <div class="success-popup__text color-grey sans">Вы можете разослать его близким и друзьям,</div>
+      <div class="success-popup__text color-grey sans">чтобы они точно знали, что вам подарить.</div>
+      <div class="success-popup__image mb-20">
+        <img src="data/logo.svg" data-src="images/present.svg" width="200" height="250" alt="" class="lazyload">
+      </div>
+      <div class="success-popup__text text-left color-grey mb-10 sans">Данные дарителя 1:</div>
+      <form class="popup__form" action="#">
+        <div class="form-block">
+          <input class="main-input" type="text" name="name">
+          <div class="form-label">*Имя</div>
+        </div>
+        <div class="form-block">
+          <input class="main-input" type="email" name="email">
+          <div class="form-label">*Е-mail</div>
+        </div>
+        <div class="form-block">
+          <input class="main-input" type="text" name="phone">
+          <div class="form-label">*Телефон</div>
+        </div>
+        <div class="buttons">
+          <a href="#" class="m-auto mw-50 sans color-grey text-decor-none flex-col" type="submit">
+            <span class="text-center mb-10">Продолжить</span>
+            <svg width="5" height="8" viewBox="0 0 5 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M4.85353 3.64642L1.67155 0.46444C1.47628 0.269178 1.1597 0.269178 0.96444 0.46444C0.769177 0.659702 0.769177 0.976284 0.96444 1.17155L3.75231 4.00381L0.96444 6.8284C0.769177 7.02366 0.769177 7.34025 0.96444 7.53551C1.1597 7.73077 1.47628 7.73077 1.67155 7.53551L4.85353 4.35353C5.04879 4.15826 5.04879 3.84168 4.85353 3.64642Z" fill="#525252"/>
+            </svg>
+          </a>
+          <button class="submit-button m-auto mw-50 sans" type="submit">Отправить</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+
 <div class="popup popup-lost-basket">
   <div class="popup__overlay"></div>
   <div class="popup__holder">
@@ -897,16 +949,15 @@
       <svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="images/sprite.svg#close"></use></svg>
     </div>
     <div class="popup__content">
-      <div class="success-popup__title success-popup-next__title">ВАШ ЗАКАЗ</div>
-      <div class="success-popup__title success-popup-next__title">ЖДЕТ В КОРЗИНЕ</div>
+      <div class="success-popup__title success-popup-next__title text-center color-brown sans">ВАШ ЗАКАЗ ЖДЕТ В КОРЗИНЕ</div>
       <div class="success-popup__image success-popup-next__image">
         <img src="data/logo.svg" data-src="data/basket01-01.svg" width="405" height="315" alt="" class="lazyload">
       </div>
-      <div class="success-popup__text success-popup-next__text">Ваша корзина полная.</div>
-      <div class="success-popup__text success-popup-next__text">Вы сделали прекасный выбор!</div>
-      <div class="success-popup__text success-popup-next__text">Хотите оформить заказ?</div>
+      <div class="success-popup__text color-grey sans">Ваша корзина полная.</div>
+      <div class="success-popup__text color-grey sans">Вы сделали прекасный выбор!</div>
+      <div class="success-popup__text color-grey sans">Хотите оформить заказ?</div>
       <br>
-      <a href="#" class="submit-button">ОПЛАТИТЬ</a>
+      <a href="#" class="submit-button mw-75 m-auto sans">ОПЛАТИТЬ</a>
     </div>
   </div>
 </div>
@@ -932,24 +983,43 @@
             </linearGradient>
           </defs>
         </svg>
-        Товар добавлен в корзину
+        <span class="span-mb-4 color-brown sans">Товар добавлен в корзину</span>
       </div>
       <div class="success-popup__image">
         <img src="data/logo.svg" data-src="data/basket01-01.svg" width="405" height="315" alt="" class="lazyload">
       </div>
-      <div class="success-popup__text">Общая сумма: 1200 UAH</div>
+      <div class="success-popup__text color-brown sans">Общая сумма: 1200 UAH</div>
       <br>
       <div class="success-popup__buttons">
-        <a href="#" class="submit-button-link">
+        <a href="#" class="submit-button-link sans">
           <svg width="5" height="8" viewBox="0 0 5 8" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M4.85353 3.64642L1.67155 0.46444C1.47628 0.269178 1.1597 0.269178 0.96444 0.46444C0.769177 0.659702 0.769177 0.976284 0.96444 1.17155L3.75231 4.00381L0.96444 6.8284C0.769177 7.02366 0.769177 7.34025 0.96444 7.53551C1.1597 7.73077 1.47628 7.73077 1.67155 7.53551L4.85353 4.35353C5.04879 4.15826 5.04879 3.84168 4.85353 3.64642Z" fill="#525252"/>
           </svg>
           Продолжить покупки
         </a>
-        <a href="#" class="submit-button">Оформить заказ</a>
+        <a href="#" class="submit-button sans">Оформить заказ</a>
       </div>
     </div>
   </div>
+</div>
+<div class="popup popup-callback-2-sent">
+  <div class="popup__overlay"></div>
+  <div class="popup__holder">
+    <div class="popup__close">
+      <svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="images/sprite.svg#close"></use></svg>
+    </div>
+    <div class="popup__content">
+      <div class="success-popup-next__title text-center text-upper flex-col">
+        <span class="color-brown sans text-center">Отлично!</span>
+        <span class="span-mb-4 color-brown sans text-center">Ваш намек отправлен!</span>
+      </div>
+      <div class="success-popup__image">
+        <div class="mw-75 m-auto">
+          <svg id="Слой_1" data-name="Слой 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 121.25 124.25"><defs><style>.cls-1{fill:url(#Безымянный_градиент_14);}.cls-2{fill:url(#Безымянный_градиент_14-2);}</style><linearGradient id="Безымянный_градиент_14" x1="23.87" y1="56.61" x2="98.54" y2="56.61" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#916a40"/><stop offset="0.32" stop-color="#916a40"/><stop offset="0.71" stop-color="#63473f"/><stop offset="0.99" stop-color="#4d3c3f"/></linearGradient><linearGradient id="Безымянный_градиент_14-2" x1="81.17" y1="19.83" x2="84.65" y2="19.83" xlink:href="#Безымянный_градиент_14"/></defs><title>намек</title><path class="cls-1" d="M97.12,44.75H70.91L81.56,41.5a12.35,12.35,0,0,0,8.22-8A12.56,12.56,0,0,0,88,22.12a1.42,1.42,0,0,0-2.28,1.68,9.72,9.72,0,0,1,1.36,8.81,9.55,9.55,0,0,1-6.36,6.19L63.27,44.12,68.6,26.66a9.65,9.65,0,0,1,9.33-6.86h.16a1.42,1.42,0,0,0,0-2.83h-.18a12.47,12.47,0,0,0-12,8.87L60.55,43.32l-4-13A9.71,9.71,0,1,0,44.45,42.41l7.68,2.34H25.29a1.42,1.42,0,0,0-1.42,1.42V61.5a1.42,1.42,0,0,0,1.42,1.42h2.83V94.83a1.42,1.42,0,0,0,1.42,1.42H92a1.42,1.42,0,0,0,1.42-1.42V62.92h3.67a1.42,1.42,0,0,0,1.42-1.42V46.17A1.42,1.42,0,0,0,97.12,44.75ZM50.62,93.42H31V62.92H50.62Zm0-33.33H26.7V47.58H50.62ZM45.28,39.7a6.88,6.88,0,0,1,2-13.46,7,7,0,0,1,1.69.21,6.83,6.83,0,0,1,4.91,4.67l3.77,12.35ZM68.12,93.42H53.45V47.58H68.12Zm22.5,0H71V62.92H90.62ZM95.7,60.08H71V47.58H95.7Z"/><circle class="cls-2" cx="82.91" cy="19.83" r="1.74"/></svg>
+        </div>
+      </div>
+  </div>
+</div>
 </div>
 
 <div class="popup popup-success">
