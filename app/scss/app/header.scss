@@ -475,6 +475,9 @@ body.custome{
     width: calc(50% - 78.5px);
     @extend %flex-v;
     justify-content: flex-start;
+    @include response(992px) {
+      width: calc(40% - 78.5px);
+    }
     @include response(767px) {
       width: auto;
     }
@@ -485,9 +488,22 @@ body.custome{
   }
   &__center {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
     width: 157px;
+    span {
+      display: block;
+      font-size: 13px;
+      margin-top: 2px;
+      color: #000;
+      position: relative;
+      letter-spacing: 0.45px;
+      left: -0.65px;
+      @include response(767px) {
+        display: none;
+      }
+    }
     @include response(767px) {
       width: auto;
       margin-right: 25px;

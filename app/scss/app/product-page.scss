@@ -61,8 +61,8 @@
     }
   }
   .head-title {
-    font-size: 32px;
-    line-height: 40px;
+    font-size: 23px;
+    line-height: 28px;
     @include response(1249px) {
       text-align: left;
     }
@@ -115,7 +115,7 @@
     flex-basis: 525px;
     .head-block {
       @include response(1023px) {
-        display: none
+        display: none;
       }
     }
     @include response(1023px) {
@@ -266,6 +266,11 @@
       &.btn-second {
         width: calc((100% - 76px) / 2);
         margin: 5px;
+        @include response(767px) {
+          &:hover {
+            color: #8b6d55;
+          }
+        }
       }
       &.full-width {
         flex: 1 0 100%;

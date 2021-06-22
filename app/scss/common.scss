@@ -107,10 +107,8 @@ p.error {
   min-height: 100vh;
   position: relative;
   padding-top: 104px;
-  padding-bottom: 528px;
   @include response(767px) {
     padding-top: 72px;
-    padding-bottom: 373px;
   }
 }        
 body.main-page,
@@ -231,7 +229,7 @@ body.custome-page {
 .head-block {
   max-width: 1400px;
   width: 100%;
-  margin: 52px auto 46px;
+  margin: 40px auto;
   &--center {
     text-align: center;
     .head-title {
@@ -248,8 +246,8 @@ body.custome-page {
   }
 }
 .head-title {
-  line-height: 60px;
-  font-size: 48px;
+  line-height: 50px;
+  font-size: 30px;
   letter-spacing: 0.2em;
   text-transform: uppercase;
   color: #000;
@@ -288,7 +286,7 @@ body.custome-page {
     font-weight: 300;
     font-size: 13px;
     font-family: $font;
-    font-style: italic;
+    //font-style: italic;
     & + li {
       margin-left: 32px;
       &::after {
