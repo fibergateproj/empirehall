@@ -1054,6 +1054,9 @@ body.custome{
   text-transform: uppercase;
   letter-spacing: .1em;
   box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+  @include response(400px) {
+    top: 120px;
+  }
   svg {
     width: 7px;
     height: 9px;
@@ -1064,7 +1067,8 @@ body.custome{
     display: flex;
   }
 }
-.cart-add-popup,.wishlist-add-popup {
+.cart-add-popup,
+.wishlist-add-popup {
   position: absolute;
   display: none;
   align-items: center;
