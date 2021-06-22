@@ -20,16 +20,20 @@
   }
   &__holder {
     background: #fff;
-    padding: 100px 90px 98px;
+    padding: 50px;
     position: absolute;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
     z-index: 999;
-    max-width: 680px;
+    max-width: 500px;
     width: 100%;
     overflow: auto;
     max-height: 100%;
+    @include response-min(1440px) {
+      padding: 90px;
+      max-width: 680px;
+    }
     @include response(767px) {
       padding: 60px 15px 40px;
     }
