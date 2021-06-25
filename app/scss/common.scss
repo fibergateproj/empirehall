@@ -110,6 +110,14 @@ p.error {
   @include response(767px) {
     padding-top: 72px;
   }
+  &.menu-padding{
+    @include response(767px) {
+      padding-top: 130px;
+    }
+    @include response(420px) {
+      padding-top: 150px;
+    }
+  }
 }
 body.main-page,
 body.custome-page {

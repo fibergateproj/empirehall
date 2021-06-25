@@ -560,6 +560,10 @@ body.custome{
       }
     }
     &.header__link--basket{
+      svg {
+        height: 30px;
+        width: 30px ;
+      }
     }
     &--wishlist{
       text-decoration:none;
