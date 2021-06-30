@@ -2,7 +2,7 @@
 <html lang="ru">
 {% include 'head.html' %}
   <body>
-    <div class="wrapper">
+    <main class="wrapper">
     {% include 'header.html' %}
 
     <div class="head-block">
@@ -161,9 +161,10 @@
 
         <div class="product-page__options">
           <div class="product-quantity">
-            <button class="product-quantity__button product-quantity__minus" name="product-quantity-minus"><svg xmlns="http://www.w3.org/2000/svg" width="7" height="1" viewBox="0 0 7 1"><g stroke-width="1"><line x1="0" y1="0" x2="7" y2="0" style="stroke: #000; " /></g></svg></button>
-            <input class="product-quantity__input" type="number" name="product-quantity" value="1" min="0" max="999" readonly>
-            <button class="product-quantity__button product-quantity__plus"  name="product-quantity-plus"><svg xmlns="http://www.w3.org/2000/svg" width="7" height="7" viewBox="0 0 7 7"><path d="M1308,350h7v1h-7v-1Zm3-3h1v7h-1v-7Z" transform="translate(-1308 -347)"/></svg></button>
+            <button class="product-quantity__button product-quantity__minus" aria-label="product-quantity-minus"><svg xmlns="http://www.w3.org/2000/svg" width="7" height="1" viewBox="0 0 7 1"><g stroke-width="1"><line x1="0" y1="0" x2="7" y2="0" style="stroke: #000; " /></g></svg></button>
+            <input id="product-quantity-input" class="product-quantity__input" type="number" name="product-quantity" value="1" min="0" max="999" readonly>
+            <button class="product-quantity__button product-quantity__plus" aria-label="product-quantity-plus"><svg xmlns="http://www.w3.org/2000/svg" width="7" height="7" viewBox="0 0 7 7"><path d="M1308,350h7v1h-7v-1Zm3-3h1v7h-1v-7Z" transform="translate(-1308 -347)"/></svg></button>
+            <label for="product-quantity-input"></label>
           </div>
           <div class="product-page__price">
                     <div class="basket-popup__alert">
@@ -664,7 +665,7 @@
     </div>
 
     {% include 'footer.html' %}
-  </div>
+  </main>
   {% include 'js.html' %}
 </body>
 </html>

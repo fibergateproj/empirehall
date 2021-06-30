@@ -181,7 +181,7 @@
       line-height: 15px;
       letter-spacing: 0.1em;
       text-transform: uppercase;
-      color: #999;
+      color: #525252;
     }
   }
   &__article {
@@ -353,11 +353,11 @@
     border-bottom: 1px solid #e0e0e0;
     &.active {
       .info-box__title {
-        color: rgba(82, 82, 82, 0.5);
+        color: rgba(82,82,82,.8);
         &::after {
           transform: translateY(-50%) rotate(-180deg);
           margin-top: -2px;
-          border-top-color: rgba(82, 82, 82, 0.5);
+          border-top-color: rgba(82,82,82,.8);
         }
       }
     }

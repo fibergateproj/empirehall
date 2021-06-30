@@ -19,7 +19,7 @@
 </head>
 
   <body>
-    <div class="wrapper">
+    <main class="wrapper">
     <header class="header">
   <div class="header__inner">
     <div class="header__left">
@@ -517,9 +517,10 @@
 
         <div class="product-page__options">
           <div class="product-quantity">
-            <button class="product-quantity__button product-quantity__minus" name="product-quantity-minus"><svg xmlns="http://www.w3.org/2000/svg" width="7" height="1" viewBox="0 0 7 1"><g stroke-width="1"><line x1="0" y1="0" x2="7" y2="0" style="stroke: #000; " /></g></svg></button>
-            <input class="product-quantity__input" type="number" name="product-quantity" value="1" min="0" max="999" readonly>
-            <button class="product-quantity__button product-quantity__plus"  name="product-quantity-plus"><svg xmlns="http://www.w3.org/2000/svg" width="7" height="7" viewBox="0 0 7 7"><path d="M1308,350h7v1h-7v-1Zm3-3h1v7h-1v-7Z" transform="translate(-1308 -347)"/></svg></button>
+            <button class="product-quantity__button product-quantity__minus" aria-label="product-quantity-minus"><svg xmlns="http://www.w3.org/2000/svg" width="7" height="1" viewBox="0 0 7 1"><g stroke-width="1"><line x1="0" y1="0" x2="7" y2="0" style="stroke: #000; " /></g></svg></button>
+            <input id="product-quantity-input" class="product-quantity__input" type="number" name="product-quantity" value="1" min="0" max="999" readonly>
+            <button class="product-quantity__button product-quantity__plus" aria-label="product-quantity-plus"><svg xmlns="http://www.w3.org/2000/svg" width="7" height="7" viewBox="0 0 7 7"><path d="M1308,350h7v1h-7v-1Zm3-3h1v7h-1v-7Z" transform="translate(-1308 -347)"/></svg></button>
+            <label for="product-quantity-input"></label>
           </div>
           <div class="product-page__price">
                     <div class="basket-popup__alert">
@@ -1092,7 +1093,7 @@
       <div class="form-block">
         <input class="footer-subscribe__input" type="email" name="email" placeholder="Введите адрес электронной почты, чтобы подписаться на нашу рассылку">
       </div>
-      <button class="footer-subscribe__button" type="submit">
+      <button class="footer-subscribe__button" type="submit" aria-label="footer-subscribe-button">
         <svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="images/sprite.svg#subscribe-button"></use></svg>
       </button>
     </form>
@@ -1391,9 +1392,9 @@
               <div class="basket-block__title"><a href="#">"Laque de Chine" Dinner Plate</a></div>
               <div class="basket-block__article">Синий / Арт 23243</div>
               <div class="product-quantity">
-                <button class="product-quantity__button product-quantity__minus"><svg xmlns="http://www.w3.org/2000/svg" width="7" height="1" viewBox="0 0 7 1"><g stroke-width="1"><line x1="0" y1="0" x2="7" y2="0" style="stroke: #000; " /></g></svg></button>
+                <button class="product-quantity__button product-quantity__minus" aria-label="product-quantity-minus"><svg xmlns="http://www.w3.org/2000/svg" width="7" height="1" viewBox="0 0 7 1"><g stroke-width="1"><line x1="0" y1="0" x2="7" y2="0" style="stroke: #000; " /></g></svg></button>
                 <input class="product-quantity__input" type="number" name="product-quantity" value="1" min="0" max="999" readonly>
-                <button class="product-quantity__button product-quantity__plus"><svg xmlns="http://www.w3.org/2000/svg" width="7" height="7" viewBox="0 0 7 7"><path d="M1308,350h7v1h-7v-1Zm3-3h1v7h-1v-7Z" transform="translate(-1308 -347)"/></svg></button>
+                <button class="product-quantity__button product-quantity__plus" aria-label="product-quantity-plus"><svg xmlns="http://www.w3.org/2000/svg" width="7" height="7" viewBox="0 0 7 7"><path d="M1308,350h7v1h-7v-1Zm3-3h1v7h-1v-7Z" transform="translate(-1308 -347)"/></svg></button>
               </div>
             </div>
             <div class="basket-block__price">24,804 uah</div>
@@ -1411,9 +1412,9 @@
             <div class="basket-block__title"><a href="#">"Laque de Chine" Dinner Plate</a></div>
             <div class="basket-block__article">Синий / Арт 23243</div>
             <div class="product-quantity">
-              <button class="product-quantity__button product-quantity__minus"><svg xmlns="http://www.w3.org/2000/svg" width="7" height="1" viewBox="0 0 7 1"><g stroke-width="1"><line x1="0" y1="0" x2="7" y2="0" style="stroke: #000; " /></g></svg></button>
+              <button class="product-quantity__button product-quantity__minus" aria-label="product-quantity-minus"><svg xmlns="http://www.w3.org/2000/svg" width="7" height="1" viewBox="0 0 7 1"><g stroke-width="1"><line x1="0" y1="0" x2="7" y2="0" style="stroke: #000; " /></g></svg></button>
               <input class="product-quantity__input" type="number" name="product-quantity" value="1" min="0" max="999" readonly>
-              <button class="product-quantity__button product-quantity__plus"><svg xmlns="http://www.w3.org/2000/svg" width="7" height="7" viewBox="0 0 7 7"><path d="M1308,350h7v1h-7v-1Zm3-3h1v7h-1v-7Z" transform="translate(-1308 -347)"/></svg></button>
+              <button class="product-quantity__button product-quantity__plus" aria-label="product-quantity-plus"><svg xmlns="http://www.w3.org/2000/svg" width="7" height="7" viewBox="0 0 7 7"><path d="M1308,350h7v1h-7v-1Zm3-3h1v7h-1v-7Z" transform="translate(-1308 -347)"/></svg></button>
             </div>
           </div>
           <div class="basket-block__price no-price">Нет цены</div>
@@ -1431,9 +1432,9 @@
             <div class="basket-block__title"><a href="#">"Laque de Chine" Dinner Plate</a></div>
             <div class="basket-block__article">Синий / Арт 23243</div>
             <div class="product-quantity">
-              <button class="product-quantity__button product-quantity__minus"><svg xmlns="http://www.w3.org/2000/svg" width="7" height="1" viewBox="0 0 7 1"><g stroke-width="1"><line x1="0" y1="0" x2="7" y2="0" style="stroke: #000; " /></g></svg></button>
+              <button class="product-quantity__button product-quantity__minus" aria-label="product-quantity-minus"><svg xmlns="http://www.w3.org/2000/svg" width="7" height="1" viewBox="0 0 7 1"><g stroke-width="1"><line x1="0" y1="0" x2="7" y2="0" style="stroke: #000; " /></g></svg></button>
               <input class="product-quantity__input" type="number" name="product-quantity" value="1" min="0" max="999" readonly>
-              <button class="product-quantity__button product-quantity__plus"><svg xmlns="http://www.w3.org/2000/svg" width="7" height="7" viewBox="0 0 7 7"><path d="M1308,350h7v1h-7v-1Zm3-3h1v7h-1v-7Z" transform="translate(-1308 -347)"/></svg></button>
+              <button class="product-quantity__button product-quantity__plus" aria-label="product-quantity-plus"><svg xmlns="http://www.w3.org/2000/svg" width="7" height="7" viewBox="0 0 7 7"><path d="M1308,350h7v1h-7v-1Zm3-3h1v7h-1v-7Z" transform="translate(-1308 -347)"/></svg></button>
             </div>
           </div>
           <div class="basket-block__price">24,804 uah</div>
@@ -1451,9 +1452,9 @@
             <div class="basket-block__title"><a href="#">"Laque de Chine" Dinner Plate</a></div>
             <div class="basket-block__article">Синий / Арт 23243</div>
             <div class="product-quantity">
-              <button class="product-quantity__button product-quantity__minus"><svg xmlns="http://www.w3.org/2000/svg" width="7" height="1" viewBox="0 0 7 1"><g stroke-width="1"><line x1="0" y1="0" x2="7" y2="0" style="stroke: #000; " /></g></svg></button>
+              <button class="product-quantity__button product-quantity__minus" aria-label="product-quantity-minus"><svg xmlns="http://www.w3.org/2000/svg" width="7" height="1" viewBox="0 0 7 1"><g stroke-width="1"><line x1="0" y1="0" x2="7" y2="0" style="stroke: #000; " /></g></svg></button>
               <input class="product-quantity__input" type="number" name="product-quantity" value="1" min="0" max="999" readonly>
-              <button class="product-quantity__button product-quantity__plus"><svg xmlns="http://www.w3.org/2000/svg" width="7" height="7" viewBox="0 0 7 7"><path d="M1308,350h7v1h-7v-1Zm3-3h1v7h-1v-7Z" transform="translate(-1308 -347)"/></svg></button>
+              <button class="product-quantity__button product-quantity__plus" aria-label="product-quantity-plus"><svg xmlns="http://www.w3.org/2000/svg" width="7" height="7" viewBox="0 0 7 7"><path d="M1308,350h7v1h-7v-1Zm3-3h1v7h-1v-7Z" transform="translate(-1308 -347)"/></svg></button>
             </div>
           </div>
           <div class="basket-block__price">24,804 uah</div>
@@ -1493,7 +1494,7 @@
   </div>
 </div>
 
-  </div>
+  </main>
   <script>
     var width = window.innerWidth
         || document.documentElement.clientWidth

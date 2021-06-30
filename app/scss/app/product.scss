@@ -46,13 +46,14 @@
       justify-content: center;
       align-items: center;
       flex-wrap: wrap;
-      a, span{
-        color: #7d7d7d !important;
+      a,
+      span{
+        color: rgba(82,82,82,.8) !important;
       }
     }
   }
   &__code {
-    color: #777777;
+    color: rgba(82,82,82,.8);
     font-size: 13px;
     letter-spacing: normal;
     line-height: 30px;
@@ -103,7 +104,7 @@
     letter-spacing: 0.1em;
     text-decoration-line: line-through;
     text-transform: uppercase;
-    color: #777777;
+    color: rgba(82,82,82,.8);
     margin-bottom: 3px;
   }
   &__price-new {
@@ -222,7 +223,7 @@
     line-height: 14px;
     letter-spacing: 0.1em;
     text-transform: uppercase;
-    color: #777777;
+    color: rgba(82,82,82,.8);
     margin-bottom: 5px;
   }
   &__no-price-btm {

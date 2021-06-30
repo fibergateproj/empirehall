@@ -245,7 +245,7 @@
       line-height: normal;
     }
     &.no-price {
-      color: #999;
+      color: rgba(82,82,82,.8);
     }
   }
   &__total {
@@ -429,7 +429,7 @@
       position: absolute;
       bottom: 100%;
       left: 10px;
-      @include triangle(up, 10px, #000)
+      @include triangle(up, 10px, #000);
     }
     &.open {
       visibility: visible;
