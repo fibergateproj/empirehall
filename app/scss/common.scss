@@ -422,7 +422,7 @@ body.custome-page {
       a {
         width: auto;
         border: none;
-        color: rgba(0, 4, 23, 0.4);
+        color: rgba(82, 82, 82, 0.8);
         transition: .3s ease-in-out;
         transform: rotate(0);
         @extend %flex-c;
@@ -479,7 +479,7 @@ body.custome-page {
       a {
         width: auto;
         border: none;
-        color: rgba(0, 4, 23, 0.4);
+        color: rgba(82, 82, 82, 0.8);
         transition: .3s ease-in-out;
         transform: rotate(0);
         @include response(991px) {
