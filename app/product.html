@@ -304,6 +304,53 @@
 
       </div>
     </div>
+      <div class="head-block">
+        <form class="form-horizontal" id="form-review1">
+          <div class="head-title">Добавить отзыв к товару</div>
+          <div class="form-default">
+            <div class="form-block not-required">
+              <div class="rating set-rating tt-rating">
+                <i class="product-page__star icon-star" data-value="1"></i>
+                <i class="product-page__star icon-star" data-value="2"></i>
+                <i class="product-page__star icon-star" data-value="3"></i>
+                <i class="product-page__star icon-star" data-value="4"></i>
+                <i class="product-page__star icon-star" data-value="5"></i>
+                <span class="product-page__star-label">Плохо</span>
+                <span class="product-page__star-label">Так себе</span>
+                <span class="product-page__star-label">Нормально</span>
+                <span class="product-page__star-label">Хорошо</span>
+                <span class="product-page__star-label">Отлично</span>
+              </div>
+              <div style="display: none;">
+                &nbsp;&nbsp;&nbsp; {{ entry_bad }}&nbsp;
+                <input type="radio" name="rating" value="1" />
+                &nbsp;
+                <input type="radio" name="rating" value="2" />
+                &nbsp;
+                <input type="radio" name="rating" value="3" />
+                &nbsp;
+                <input type="radio" name="rating" value="4" />
+                &nbsp;
+                <input type="radio" name="rating" value="5" />
+                &nbsp;{{ entry_good }}
+              </div>
+            </div>
+
+            <div class="form-block">
+              <input type="text" name="name" value="" id="input-name" class="main-input" />
+              <label class="form-label" for="input-name">Имя</label>
+            </div>
+            <div class="form-block">
+              <textarea name="text" rows="5" id="input-review" class="main-textarea"></textarea>
+              <label class="form-label" for="input-review">Отзыв</label>
+            </div>
+            <div class="buttons">
+              <div class="help-block">Примечание: HTML разметка не поддерживается. Используйте обычный текст</div>
+              <button type="butto" class="main-button">Отправить</button>
+            </div>
+          </div>
+        </form>
+      </div>
 
     <div class="collection-products">
       <div class="collection-products__title">Похожие товары</div>

@@ -94,3 +94,35 @@ $(document).on('click', '.modal-banner', function(event){
     $(this).fadeOut();
   }
 });
+$(document).ready(function() {
+  $('.set-rating i').hover(function(){
+    var rate = $(this).data('value');
+    var i = 0;
+    $('.set-rating i').each(function(){
+      i++;
+      if(i <= rate){
+        $(this).addClass('active');
+      }else{
+        $(this).removeClass('active');
+      }
+    })
+  })
+
+  $('.set-rating i').mouseleave(function(){
+    var rate = $('input[name="rating"]:checked').val();
+    rate = parseInt(rate);
+    i = 0;
+    $('.set-rating i').each(function(){
+      i++;
+      if(i <= rate){
+        $(this).addClass('active');
+      }else{
+        $(this).removeClass('active');
+      }
+    })
+  })
+
+  $('.set-rating i').click(function(){
+    $('input[name="rating"]:nth('+ ($(this).data('value')-1) +')').prop('checked', true);
+  });
+});
